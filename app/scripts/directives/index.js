@@ -1,0 +1,3 @@
+define([
+    './timeline'
+], function () {});

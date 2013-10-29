@@ -1,0 +1,10 @@
+{
+    "globals": {
+        "requirejs": true,
+        "require": true,
+        "define": true
+    },
+    "browser": true,
+    "es5" : true,
+    "indent": 4
+}

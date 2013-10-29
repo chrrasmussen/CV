@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles/app.css" rel="stylesheet"/>
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <title>Christian Rasmussen</title>
+    </head>
+    <body ng-controller="MainCtrl">
+        <header>
+            <h1><a href="#/">Christian Rasmussen</a></h1>
+            <table>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td>May 30, 1987 <span>— 26 years old</span></td>
+                </tr>
+                <tr>
+                    <th>Adress</th>
+                    <td>Søndre Berg 26D<br>7051 Trondheim</td>
+                </tr>
+                <tr>
+                    <th>Cellphone</th>
+                    <td>+47 908 85 117</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:christian.rasmussen@me.com">christian.rasmussen@me.com</a></td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td><a href="http://github.com/chrrasmussen">chrrasmussen</a></td>
+                </tr>
+            </table>
+        </header>
+        
+        <timeline start-at="2003-07-01" end-at="2014-07-01" data="timelineData" click="showEvent(eventID)"></timeline>
+        
+        <div class="main" ng-view></div>
+        
+        <footer>
+            <hr>
+            Built with
+            <a href="http://getbootstrap.com/">Twitter Bootstrap</a>,
+            <a href="http://angularjs.org/">AngularJS</a>,
+            <a href="http://requirejs.org/">RequireJS</a>,
+            <a href="http://snapsvg.io/">Snap.svg</a>.
+        </footer>
+    </body>
+</html>

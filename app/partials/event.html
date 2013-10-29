@@ -1,0 +1,16 @@
+<h2>{{title}}</h2>
+<div ng-if="isPeriod">
+    Period
+    <div class="time">
+        {{startAt}} — {{endAt}}
+    </div>
+    <div class="info">Description</div>
+</div>
+<div ng-if="isMilestone">
+    Milestone
+    <div class="time">
+        {{date}}
+    </div>
+    <div class="info">Description</div>
+</div>
+<aside>{{icon}}{{company}}</aside>

@@ -1,0 +1,27 @@
+{
+  "name": "CV",
+  "version": "1.0",
+  "authors": [
+    "Christian Rasmussen <christian.rasmussen@me.com>"
+  ],
+  "description": "Personal CV",
+  "main": "index.html",
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0-rc.3",
+    "angular-route": "~v1.2.0-rc.3",
+    "requirejs": "~2.1.8",
+    "requirejs-domready": "~2.0.1",
+    "bootstrap": "~3.0.0-rc.2",
+    "Snap.svg": "~0.1.0"
+  }
+}

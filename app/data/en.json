@@ -1,0 +1,201 @@
+[
+    {
+        "title": "Education",
+        "content": [
+            {
+                "id": "ntnu",
+                "type": "period",
+                "startAt": "2012-08-15",
+                "title": "Master in Computer Science",
+                "subtitle": "NTNU",
+                "textColor": "#07539E",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "hit2",
+                "type": "period",
+                "endAt": "2012-06-15",
+                "startAt": "2011-08-15",
+                "title": "Individual Courses in Computer Science",
+                "subtitle": "Telemark University College",
+                "textColor": "#BE333C",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "hit",
+                "type": "period",
+                "endAt": "2011-06-15",
+                "startAt": "2008-08-15",
+                "title": "Bachelor in Computer Science and Industrial Automation",
+                "subtitle": "Telemark University College",
+                "textColor": "#BE333C",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "gand-vgs",
+                "type": "period",
+                "endAt": "2006-06-15",
+                "startAt": "2003-08-15",
+                "title": "Vocational Education in Automation",
+                "subtitle": "Gand VGS",
+                "textColor": "black",
+                "backgroundColor": "white"
+            }
+        ]
+    },
+    {
+        "title": "Work",
+        "content": [
+            {
+                "id": "bekk",
+                "type": "period",
+                "endAt": "2013-08-16",
+                "startAt": "2013-06-17",
+                "title": "System Developer",
+                "subtitle": "Bekk Consulting AS",
+                "textColor": "white",
+                "backgroundColor": "#404041"
+            },
+            {
+                "id": "schneider-electric4",
+                "type": "period",
+                "endAt": "2012-08-01",
+                "startAt": "2011-08-15",
+                "title": "Service Engineer",
+                "subtitle": "Schneider Electric",
+                "textColor": "#189446",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "schneider-electric3",
+                "type": "period",
+                "endAt": "2010-08-15",
+                "startAt": "2010-06-15",
+                "title": "Test Engineer",
+                "subtitle": "Schneider Electric",
+                "textColor": "#189446",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "schneider-electric2",
+                "type": "period",
+                "endAt": "2009-08-15",
+                "startAt": "2009-06-15",
+                "title": "Service Engineer",
+                "subtitle": "Schneider Electric",
+                "textColor": "#189446",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "schneider-electric",
+                "type": "period",
+                "endAt": "2008-08-15",
+                "startAt": "2006-08-01",
+                "title": "Service Engineer",
+                "subtitle": "Schneider Electric",
+                "textColor": "#189446",
+                "backgroundColor": "white"
+            }
+        ]
+    },
+    {
+        "title": "Voluntary Work",
+        "content": [
+            {
+                "id": "studentmediene-i-trondheim-as",
+                "type": "period",
+                "startAt": "2012-09-01",
+                "title": "Application Developer",
+                "subtitle": "Studentmediene i Trondheim AS",
+                "textColor": "black",
+                "backgroundColor": "white"
+            }
+        ]
+    },
+    {
+        "title": "Projects",
+        "content": [
+            {
+                "id": "barteguiden",
+                "type": "milestone",
+                "date": "2013-09-16",
+                "title": "Barteguiden",
+                "iconImage": "data/icons/barteguiden.png",
+                "textColor": "#1798C3",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "tineapp",
+                "type": "milestone",
+                "date": "2013-05-06",
+                "title": "TineApp",
+                "iconImage": "data/icons/tineapp.png",
+                "textColor": "#DD1D3F",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "blogapp",
+                "type": "milestone",
+                "date": "2012-05",
+                "title": "BlogApp",
+                "iconImage": "data/icons/blogapp.png",
+                "textColor": "black",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "friendlyloan",
+                "type": "milestone",
+                "date": "2012-02",
+                "title": "FriendlyLoan",
+                "iconImage": "data/icons/friendlyloan.png",
+                "textColor": "#F5E940",
+                "backgroundColor": "#FCFBDE"
+            },
+            {
+                "id": "global-bms-builder",
+                "type": "milestone",
+                "date": "2011-06",
+                "title": "Global BMS Builder",
+                "iconImage": "data/icons/global-bms-builder.png",
+                "textColor": "#18A554",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "sudoku-app",
+                "type": "milestone",
+                "date": "2011-05",
+                "title": "SudokuApp",
+                "iconImage": "data/icons/sudoku-app.png",
+                "textColor": "black",
+                "backgroundColor": "#AAB1B9"
+            },
+            {
+                "id": "tac-vista-for-iphone",
+                "type": "milestone",
+                "date": "2009-06",
+                "title": "TAC Vista for iPhone",
+                "iconImage": "data/icons/tac-vista-for-iphone.png",
+                "textColor": "#8C3341",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "f1-project",
+                "type": "milestone",
+                "date": "2008-12",
+                "title": "F1 project",
+                "iconImage": "data/icons/f1-project.png",
+                "textColor": "#EEC02C",
+                "backgroundColor": "white"
+            },
+            {
+                "id": "ifknorge",
+                "type": "milestone",
+                "date": "2005-10-28",
+                "title": "IFK Norge",
+                "iconImage": "data/icons/ifknorge.png",
+                "textColor": "#F6DB00",
+                "backgroundColor": "white"
+            }
+        ]
+    }
+]
