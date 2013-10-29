@@ -9,7 +9,14 @@
                 "title": "Master in Computer Science",
                 "subtitle": "NTNU",
                 "textColor": "#07539E",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FBFF",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/ntnu.png",
+                    "width": 60,
+                    "height": 60,
+                    "link": "http://ntnu.no"
+                }
             },
             {
                 "id": "hit2",
@@ -19,7 +26,14 @@
                 "title": "Individual Courses in Computer Science",
                 "subtitle": "Telemark University College",
                 "textColor": "#BE333C",
-                "backgroundColor": "white"
+                "backgroundColor": "#FFFCFD",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/hit.png",
+                    "width": 150,
+                    "height": 50,
+                    "link": "http://hit.no"
+                }
             },
             {
                 "id": "hit",
@@ -29,7 +43,14 @@
                 "title": "Bachelor in Computer Science and Industrial Automation",
                 "subtitle": "Telemark University College",
                 "textColor": "#BE333C",
-                "backgroundColor": "white"
+                "backgroundColor": "#FFFCFD",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/hit.png",
+                    "width": 150,
+                    "height": 50,
+                    "link": "http://hit.no"
+                }
             },
             {
                 "id": "gand-vgs",
@@ -39,7 +60,8 @@
                 "title": "Vocational Education in Automation",
                 "subtitle": "Gand VGS",
                 "textColor": "black",
-                "backgroundColor": "white"
+                "backgroundColor": "white",
+                "normalTextColor": "black"
             }
         ]
     },
@@ -54,7 +76,14 @@
                 "title": "System Developer",
                 "subtitle": "Bekk Consulting AS",
                 "textColor": "white",
-                "backgroundColor": "#404041"
+                "backgroundColor": "#404041",
+                "normalTextColor": "#DDD",
+                "logo": {
+                    "image": "data/logos/bekk.png",
+                    "width": 150,
+                    "height": 54,
+                    "link": "http://bekk.no"
+                }
             },
             {
                 "id": "schneider-electric4",
@@ -64,7 +93,14 @@
                 "title": "Service Engineer",
                 "subtitle": "Schneider Electric",
                 "textColor": "#189446",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FFFA",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/schneider-electric.png",
+                    "width": 130,
+                    "height": 40,
+                    "link": "http://schneider-electric.no"
+                }
             },
             {
                 "id": "schneider-electric3",
@@ -74,7 +110,14 @@
                 "title": "Test Engineer",
                 "subtitle": "Schneider Electric",
                 "textColor": "#189446",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FFFA",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/schneider-electric.png",
+                    "width": 130,
+                    "height": 40,
+                    "link": "http://schneider-electric.no"
+                }
             },
             {
                 "id": "schneider-electric2",
@@ -84,7 +127,14 @@
                 "title": "Service Engineer",
                 "subtitle": "Schneider Electric",
                 "textColor": "#189446",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FFFA",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/schneider-electric.png",
+                    "width": 130,
+                    "height": 40,
+                    "link": "http://schneider-electric.no"
+                }
             },
             {
                 "id": "schneider-electric",
@@ -94,7 +144,14 @@
                 "title": "Service Engineer",
                 "subtitle": "Schneider Electric",
                 "textColor": "#189446",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FFFA",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/schneider-electric.png",
+                    "width": 130,
+                    "height": 40,
+                    "link": "http://schneider-electric.no"
+                }
             }
         ]
     },
@@ -107,8 +164,15 @@
                 "startAt": "2012-09-01",
                 "title": "Application Developer",
                 "subtitle": "Studentmediene i Trondheim AS",
-                "textColor": "black",
-                "backgroundColor": "white"
+                "textColor": "#3597D3",
+                "backgroundColor": "#F7FCFF",
+                "normalTextColor": "#333",
+                "logo": {
+                    "image": "data/logos/smit.png",
+                    "width": 70,
+                    "height": 70,
+                    "link": "http://studentmediene.no"
+                }
             }
         ]
     },
@@ -122,7 +186,15 @@
                 "title": "Barteguiden",
                 "iconImage": "data/icons/barteguiden.png",
                 "textColor": "#1798C3",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FDFF",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "obj-c",
+                    "nodejs"
+                ],
+                "productPageLink": "http://barteguiden.no",
+                "appStoreLink": "http://itunes.com/apps/barteguiden",
+                "sourceCodeLink": "http://github.com/dusken/Kulturkalender-iOS"
             },
             {
                 "id": "tineapp",
@@ -131,61 +203,112 @@
                 "title": "TineApp",
                 "iconImage": "data/icons/tineapp.png",
                 "textColor": "#DD1D3F",
-                "backgroundColor": "white"
+                "backgroundColor": "#FFFCFD",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "html",
+                    "css",
+                    "javascript",
+                    "php",
+                    "mysql"
+                ]
             },
             {
                 "id": "blogapp",
                 "type": "milestone",
-                "date": "2012-05",
+                "date": "2012-05-01",
                 "title": "BlogApp",
                 "iconImage": "data/icons/blogapp.png",
-                "textColor": "black",
-                "backgroundColor": "white"
+                "textColor": "#2A2A2A",
+                "backgroundColor": "#F6F6F6",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "html",
+                    "css",
+                    "javascript",
+                    "mysql",
+                    "php"
+                ],
+                "previewLink": "http://christian.rasmussen.io/portfolio/blogapp/preview",
+                "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp"
             },
             {
                 "id": "friendlyloan",
                 "type": "milestone",
-                "date": "2012-02",
+                "date": "2012-02-01",
                 "title": "FriendlyLoan",
                 "iconImage": "data/icons/friendlyloan.png",
-                "textColor": "#F5E940",
-                "backgroundColor": "#FCFBDE"
+                "textColor": "#E0DA38",
+                "backgroundColor": "#FCFBDE",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "obj-c"
+                ],
+                "productPageLink": "http://friendlyloan.rasmussen.io",
+                "appStoreLink": "http://itunes.com/apps/friendlyloan",
+                "description": "FriendlyLoan helps you remember when, where and why you borrowed or lent money.\n\nEasily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization."
             },
             {
                 "id": "global-bms-builder",
                 "type": "milestone",
-                "date": "2011-06",
+                "date": "2011-06-01",
                 "title": "Global BMS Builder",
                 "iconImage": "data/icons/global-bms-builder.png",
                 "textColor": "#18A554",
-                "backgroundColor": "white"
+                "backgroundColor": "#F7FFFB",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "obj-c",
+                    "couchdb"
+                ],
+                "videoLink": "data/videos/global_bms_builder_demo.mp4"
             },
             {
                 "id": "sudoku-app",
                 "type": "milestone",
-                "date": "2011-05",
+                "date": "2011-05-01",
                 "title": "SudokuApp",
                 "iconImage": "data/icons/sudoku-app.png",
                 "textColor": "black",
-                "backgroundColor": "#AAB1B9"
+                "backgroundColor": "#C8D1DA",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "c#"
+                ],
+                "sourceCodeLink": "http://github.com/chrrasmussen/SudokuApplication",
+                "description": "SudokuApplication was developed by students attending Telemark University College, as a 6. semester project in the subject Object-oriented programming, spring 2011. Students participating in this project were: Christian Rasmussen, Erik Barsøe and Henrik Hopen."
             },
             {
                 "id": "tac-vista-for-iphone",
                 "type": "milestone",
-                "date": "2009-06",
+                "date": "2009-06-01",
                 "title": "TAC Vista for iPhone",
                 "iconImage": "data/icons/tac-vista-for-iphone.png",
                 "textColor": "#8C3341",
-                "backgroundColor": "white"
+                "backgroundColor": "#FFFCFD",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "obj-c",
+                    "vb.net"
+                ],
+                "videoLink": "data/videos/tac_vista_for_iphone_demo.mp4"
             },
             {
                 "id": "f1-project",
                 "type": "milestone",
-                "date": "2008-12",
+                "date": "2008-12-01",
                 "title": "F1 project",
                 "iconImage": "data/icons/f1-project.png",
-                "textColor": "#EEC02C",
-                "backgroundColor": "white"
+                "textColor": "#4773B2",
+                "backgroundColor": "#F7FBFF",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "html",
+                    "css",
+                    "javascript",
+                    "php"
+                ],
+                "previewLink": "http://christian.rasmussen.io/portfolio/f1/preview"
             },
             {
                 "id": "ifknorge",
@@ -194,7 +317,15 @@
                 "title": "IFK Norge",
                 "iconImage": "data/icons/ifknorge.png",
                 "textColor": "#F6DB00",
-                "backgroundColor": "white"
+                "backgroundColor": "#f7faff",
+                "normalTextColor": "#333",
+                "technologies": [
+                    "html",
+                    "css",
+                    "php",
+                    "mysql"
+                ],
+                "previewLink": "http://christian.rasmussen.io/portfolio/ifknorge/preview"
             }
         ]
     }

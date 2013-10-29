@@ -52,7 +52,7 @@ define([
             height: height
         });
     
-        drawLanes(paper, 0, config.verticalMargin, width, config.heightPerLane, data, '#EFEFEF', '#E8E8E7');
+        drawLanes(paper, 0, config.verticalMargin, width, config.heightPerLane, data, '#F0F0F3', '#E8E8EA');
         
         drawYears(paper, 0, config.verticalMargin, config.timelineStartAt, config.timelineEndAt, height - 2 * config.verticalMargin, config.lengthPerMonth, config.headerRowSize, '#A3AFB2');
         

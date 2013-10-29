@@ -6,7 +6,7 @@
         <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
         <title>Christian Rasmussen</title>
     </head>
-    <body ng-controller="MainCtrl">
+    <body ng-controller="MainCtrl" style="background-color: {{backgroundColor}}; color: {{textColor}};">
         <header>
             <h1><a href="#/">Christian Rasmussen</a></h1>
             <table>
@@ -15,7 +15,7 @@
                     <td>May 30, 1987 <span>— 26 years old</span></td>
                 </tr>
                 <tr>
-                    <th>Adress</th>
+                    <th>Address</th>
                     <td>Søndre Berg 26D<br>7051 Trondheim</td>
                 </tr>
                 <tr>
@@ -35,10 +35,9 @@
         
         <timeline start-at="2003-07-01" end-at="2014-07-01" data="timelineData" click="showEvent(eventID)"></timeline>
         
-        <div class="main" ng-view></div>
+        <div class="main clearfix" ng-view></div>
         
         <footer>
-            <hr>
             Built with
             <a href="http://getbootstrap.com/">Twitter Bootstrap</a>,
             <a href="http://angularjs.org/">AngularJS</a>,
