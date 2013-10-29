@@ -4,10 +4,6 @@ define([
     'use strict';
     
     app.config(function($routeProvider) {
-        $routeProvider.when('/', {
-            templateUrl: 'partials/root.html'
-        });
-        
         $routeProvider.when('/:id', {
             templateUrl: 'partials/event.html',
             controller: 'EventCtrl',
@@ -35,7 +31,7 @@ define([
         });
         
         $routeProvider.otherwise({
-            redirectTo: '/'
+            redirectTo: '/ntnu'
         });
     });
     
