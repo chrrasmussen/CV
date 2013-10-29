@@ -249,11 +249,19 @@ define([
             mask: circleMask
         });
         
+        var duration = 300;
         milestoneImage.hover(function () {
             milestoneImage.animate({
-//                transform: 'rotate(45)'
-//                strokeWidth: 2
-            }, 500);
+                transform: 'r' + [15, [milestoneX, milestoneY]]
+            }, duration * 1/4, function () {
+                milestoneImage.animate({
+                    transform: 'r' + [-15, [milestoneX, milestoneY]]
+                }, duration * 2/4, function () {
+                    milestoneImage.animate({
+                        transform: 'r' + [0, [milestoneX, milestoneY]]
+                    }, duration * 1/4);
+                });
+            });
         });
         
         milestoneImage.click(function () {
