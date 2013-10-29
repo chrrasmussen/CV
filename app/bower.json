@@ -17,10 +17,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.2.0-rc.3",
-    "angular-route": "~v1.2.0-rc.3",
     "requirejs": "~2.1.8",
     "requirejs-domready": "~2.0.1",
+    "angular": "~1.2.0-rc.3",
+    "angular-route": "~v1.2.0-rc.3",
+    "angular-animate": "~1.2.0-rc.3",
     "bootstrap": "~3.0.0-rc.2",
     "Snap.svg": "~0.1.0"
   }

@@ -1,6 +1,7 @@
 define([
     'angular',
     'angular-route',
+    'angular-animate',
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -8,5 +9,5 @@ define([
 ], function (angular) {
     'use strict';
     
-    return angular.module('cv', ['ngRoute', 'cv.services', 'cv.controllers', 'cv.filters', 'cv.directives']);
+    return angular.module('cv', ['ngRoute', 'ngAnimate', 'cv.services', 'cv.controllers', 'cv.filters', 'cv.directives']);
 });
