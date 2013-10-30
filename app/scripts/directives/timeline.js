@@ -240,13 +240,8 @@ define([
     }
     
     function drawMilestone(paper, milestoneX, milestoneY, radius, imageSrc, textColor, eventID, clickHandler) {
-        var circleMask = paper.circle(milestoneX, milestoneY, radius).attr({
-            fill: 'white'
-        });
-        
         var milestoneImage = paper.image(imageSrc, milestoneX - radius, milestoneY - radius, radius * 2, radius * 2).attr({
-            class: 'event',
-            mask: circleMask
+            class: 'event'
         });
         
         var duration = 300;
