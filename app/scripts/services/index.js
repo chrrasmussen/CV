@@ -1,3 +1,4 @@
 define([
-    './events'
+    './events',
+    './prevent_anchor_scroll'
 ], function () {});
