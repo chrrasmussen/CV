@@ -1,0 +1,65 @@
+#timeline {
+    .lane {
+        &:nth-child(even) rect {
+            fill: #F0F0F3;
+        }
+        
+        &:nth-child(odd) rect {
+            fill: #E8E8EA;
+        }
+        
+        text {
+            fill: #666;
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
+    
+    .period {
+        cursor: pointer;
+        
+        text {
+            &.title {
+                font-size: 14px;
+                font-weight: normal;
+            }
+            
+            &.subtitle {
+                font-size: 14px;
+                font-weight: 200;
+            }
+        }
+    }
+    
+    .milestone {
+        cursor: pointer;
+    }
+    
+    .edge-border {
+        stroke: #666;
+    }
+    
+    .marker {
+        @marker-color: #CB6C6B;
+        
+        circle {
+            fill: @marker-color;
+        }
+        
+        line {
+            stroke: @marker-color;
+        }
+    }
+    
+    @separator-color: #A3AFB2;
+    
+    .separator {
+        stroke: @separator-color;
+    }
+    
+    .year {
+        font-size: 18px;
+        font-weight: 200;
+        fill: @separator-color;
+    }
+}

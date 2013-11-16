@@ -40,7 +40,6 @@ define([
         heightPerEvent: 40,
         monthMarkerHeight: 5,
         markerHeight: 5,
-        markerColor: '#CB6C6B'
     };
     
     function timeline(element, data, config, clickHandler) {
@@ -52,18 +51,18 @@ define([
             height: height
         });
     
-        drawLanes(paper, 0, config.verticalMargin, width, config.heightPerLane, data, '#F0F0F3', '#E8E8EA');
+        drawLanes(paper, 0, config.verticalMargin, width, config.heightPerLane, data);
         
-        drawYears(paper, 0, config.verticalMargin, config.timelineStartAt, config.timelineEndAt, height - 2 * config.verticalMargin, config.lengthPerMonth, config.headerRowSize, '#A3AFB2');
+        drawYears(paper, 0, config.verticalMargin, config.timelineStartAt, config.timelineEndAt, height - 2 * config.verticalMargin, config.lengthPerMonth, config.headerRowSize);
         
         var topLineY = config.verticalMargin;
         paper.line(0, topLineY, width, topLineY).attr({
-            stroke: '#666666'
+            class: 'edge-border'
         });
         
         var bottomLineY = height - config.verticalMargin - config.headerRowSize;
         paper.line(0, bottomLineY, width, bottomLineY).attr({
-            stroke: '#666666'
+            class: 'edge-border'
         });
         
         drawDataPerLane(paper, 0, config.verticalMargin, width, config.heightPerLane, config.heightPerEvent, config.timelineEndAt, config.lengthPerMonth, data, clickHandler);
@@ -72,16 +71,16 @@ define([
         var dateMarkerX = lengthBetweenDates(today, config.timelineEndAt, config.lengthPerMonth);
         var dateMarkerY = config.verticalMargin - config.markerHeight;
         var dateMarkerHeight = height - config.verticalMargin - config.headerRowSize + config.monthMarkerHeight - dateMarkerY;
-        drawDateMarker(paper, dateMarkerX, dateMarkerY, dateMarkerHeight, config.markerColor);
+        drawDateMarker(paper, dateMarkerX, dateMarkerY, dateMarkerHeight);
     }
     
-    function drawDateMarker(paper, x, y, height, color) {
-        paper.circle(x, y, 3).attr({
-            fill: color
-        });
+    function drawDateMarker(paper, x, y, height) {
+        var markerTop = paper.circle(x, y, 3);
         
-        paper.line(x, y, x, y + height).attr({
-            stroke: color
+        var markerStripe = paper.line(x, y, x, y + height);
+        
+        paper.group(markerTop, markerStripe).attr({
+            class: 'marker'
         });
     }
     
@@ -113,27 +112,24 @@ define([
         }
     }
     
-    function drawLanes(paper, x, y, width, height, data, evenColor, oddColor) {
+    function drawLanes(paper, x, y, width, height, data) {
         for (var row = 0; row < data.length; row++) {
             var padding = 20;
-            var fill = (row % 2 === 0) ? evenColor : oddColor;
             
-            paper.rect(x, y + height * row, width, height).attr({
-                fill: fill
-            });
+            var lane = paper.rect(x, y + height * row, width, height);
             
-            paper.text(x + padding, y + height * row + height / 2, data[row].title).attr({
-                fill: '#666666',
-                fontSize: 18,
-                fontWeight: 200,
-                textAnchor: 'start',
+            var laneText = paper.text(x + padding, y + height * row + height / 2, data[row].title).attr({
                 dominantBaseline: 'middle',
                 dy: 3
+            });
+            
+            paper.group(lane, laneText).attr({
+                class: 'lane'
             });
         }
     }
     
-    function drawYears(paper, x, y, startAt, endAt, height, lengthPerMonth, headerRowSize, color) {
+    function drawYears(paper, x, y, startAt, endAt, height, lengthPerMonth, headerRowSize) {
         var endAtDate = new Date(Date.parse(endAt));
         var startAtDate = new Date(Date.parse(startAt));
         
@@ -145,26 +141,24 @@ define([
             
             if (currentDate.getMonth() === 0) {
                 paper.line(dateX, y, dateX, y + height).attr({
-                    stroke: color
+                    class: 'separator'
                 });
                 
                 var padding = 5;
                 paper.text(dateX - padding, y + height - padding, currentDate.getFullYear().toString()).attr({
-                    fontSize: 18,
-                    fontWeight: 200,
-                    fill: color,
+                    class: 'year',
                     textAnchor: 'end',
                     dominantBaseline: 'middle'
                 });
             }
             else if (currentDate.getMonth() === 6) {
                 paper.line(dateX, smallStripeY, dateX, smallStripeY + 10).attr({
-                    stroke: color
+                    class: 'separator'
                 });
             }
             else {
                 paper.line(dateX, smallStripeY, dateX, smallStripeY + 5).attr({
-                    stroke: color
+                    class: 'separator'
                 });
             }
             
@@ -186,9 +180,8 @@ define([
         var titleClipPathRect = paper.rect(x + padding, y, width - 2 * padding, height);
         
         var titleText = paper.text(x + padding, y + verticalOffset, title).attr({
+            class: 'title',
             fill: textColor,
-            fontSize: 14,
-            fontWeight: 'normal',
             dominantBaseline: 'middle',
             dy: 1,
             clipPath: titleClipPathRect
@@ -196,16 +189,15 @@ define([
         
         var subtitleClipPathRect = titleClipPathRect.clone();
         var subtitleText = paper.text(x + padding, y + (height - verticalOffset), subtitle).attr({
+            class: 'subtitle',
             fill: textColor,
-            fontSize: 14,
-            fontWeight: 200,
             dominantBaseline: 'middle',
             dy: 1,
             clipPath: subtitleClipPathRect
         });
         
         var group = paper.group(periodRect, titleText, subtitleText).attr({
-            class: 'event'
+            class: 'period'
         });
         
         var titleWidth = titleText.getBBox().width;
@@ -241,7 +233,7 @@ define([
     
     function drawMilestone(paper, milestoneX, milestoneY, radius, imageSrc, textColor, eventID, clickHandler) {
         var milestoneImage = paper.image(imageSrc, milestoneX - radius, milestoneY - radius, radius * 2, radius * 2).attr({
-            class: 'event'
+            class: 'milestone'
         });
         
         var duration = 300;
