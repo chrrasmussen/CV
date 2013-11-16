@@ -38,13 +38,15 @@ define([
         lengthPerMonth: 35,
         heightPerLane: 56,
         heightPerEvent: 40,
-        monthMarkerHeight: 5,
+        monthSeparatorHeight: 5,
         markerHeight: 5,
+        animationDuration: 200
     };
     
     function timeline(element, data, config, clickHandler) {
+        var dataHeight = data.length * config.heightPerLane;
         var width = lengthBetweenDates(config.timelineStartAt, config.timelineEndAt, config.lengthPerMonth);
-        var height = config.headerRowSize + 2 * config.verticalMargin + data.length * config.heightPerLane;
+        var height = 2 * config.verticalMargin + dataHeight + config.headerRowSize;
         
         var paper = snap(element).attr({
             width: width,
@@ -53,25 +55,27 @@ define([
     
         drawLanes(paper, 0, config.verticalMargin, width, config.heightPerLane, data);
         
-        drawYears(paper, 0, config.verticalMargin, config.timelineStartAt, config.timelineEndAt, height - 2 * config.verticalMargin, config.lengthPerMonth, config.headerRowSize);
+        drawYears(paper, 0, config.verticalMargin, config.timelineStartAt, config.timelineEndAt, dataHeight + config.headerRowSize, config.lengthPerMonth, config.headerRowSize);
         
-        var topLineY = config.verticalMargin;
-        paper.line(0, topLineY, width, topLineY).attr({
-            class: 'edge-border'
-        });
+        drawEdges(paper, 0, config.verticalMargin, width, dataHeight);
         
-        var bottomLineY = height - config.verticalMargin - config.headerRowSize;
-        paper.line(0, bottomLineY, width, bottomLineY).attr({
-            class: 'edge-border'
-        });
-        
-        drawDataPerLane(paper, 0, config.verticalMargin, width, config.heightPerLane, config.heightPerEvent, config.timelineEndAt, config.lengthPerMonth, data, clickHandler);
+        drawDataPerLane(paper, 0, config.verticalMargin, width, config.heightPerLane, config.heightPerEvent, config.timelineEndAt, config.lengthPerMonth, config.animationDuration, data, clickHandler);
         
         var today = new Date().toISOString();
         var dateMarkerX = lengthBetweenDates(today, config.timelineEndAt, config.lengthPerMonth);
         var dateMarkerY = config.verticalMargin - config.markerHeight;
-        var dateMarkerHeight = height - config.verticalMargin - config.headerRowSize + config.monthMarkerHeight - dateMarkerY;
+        var dateMarkerHeight = config.monthSeparatorHeight + dataHeight + config.markerHeight;
         drawDateMarker(paper, dateMarkerX, dateMarkerY, dateMarkerHeight);
+    }
+    
+    function drawEdges(paper, x, y, width, height) {
+        var topEdge = paper.line(x, y, width, y);
+        
+        var bottomEdge = paper.line(x, y + height, width, y  + height);
+        
+        paper.group(topEdge, bottomEdge).attr({
+            class: 'edges'
+        });
     }
     
     function drawDateMarker(paper, x, y, height) {
@@ -84,7 +88,7 @@ define([
         });
     }
     
-    function drawDataPerLane(paper, x, y, width, heightPerLane, heightPerEvent, timelineEndAt, lengthPerMonth, data, clickHandler) {
+    function drawDataPerLane(paper, x, y, width, heightPerLane, heightPerEvent, timelineEndAt, lengthPerMonth, animationDuration, data, clickHandler) {
         for (var lane = 0; lane < data.length; lane++) {
             var periods = data[lane].content;
             for (var i = 0; i < periods.length; i++) {
@@ -101,12 +105,12 @@ define([
                     var periodY = y + lane * heightPerLane + eventMargin;
                     var periodWidth = (startAtLength - endAtLength);
                     
-                    drawPeriod(paper, periodX, periodY, periodWidth, heightPerEvent, period.title, period.subtitle, period.textColor, period.backgroundColor, period.id, clickHandler);
+                    drawPeriod(paper, periodX, periodY, periodWidth, heightPerEvent, period.title, period.subtitle, period.textColor, period.backgroundColor, period.id, animationDuration, clickHandler);
                 }
                 else if (period.type === 'milestone') {
                     var milestoneX = x + lengthBetweenDates(period.date, timelineEndAt, lengthPerMonth);
                     var milestoneY = y + (lane + 0.5) * heightPerLane;
-                    drawMilestone(paper, milestoneX, milestoneY, heightPerEvent / 2, period.iconImage, period.textColor, period.id, clickHandler);
+                    drawMilestone(paper, milestoneX, milestoneY, heightPerEvent / 2, period.iconImage, period.textColor, period.id, animationDuration, clickHandler);
                 }
             }
         }
@@ -133,45 +137,53 @@ define([
         var endAtDate = new Date(Date.parse(endAt));
         var startAtDate = new Date(Date.parse(startAt));
         
+        var separators = [];
+        
         var currentDate = new Date(endAtDate.getFullYear(), endAtDate.getMonth(), 1);
         while (currentDate.getTime() >= startAtDate.getTime()) {
             var dateX = x + lengthBetweenDates(currentDate.toISOString(), endAt, lengthPerMonth);
             
             var smallStripeY = y + height - headerRowSize;
             
+            // New year
             if (currentDate.getMonth() === 0) {
-                paper.line(dateX, y, dateX, y + height).attr({
-                    class: 'separator'
-                });
+                var yearSeparator = paper.line(dateX, y, dateX, y + height);
+                separators.push(yearSeparator);
                 
                 var padding = 5;
-                paper.text(dateX - padding, y + height - padding, currentDate.getFullYear().toString()).attr({
-                    class: 'year',
+                var yearText = paper.text(dateX - padding, y + height - padding, currentDate.getFullYear().toString()).attr({
                     textAnchor: 'end',
                     dominantBaseline: 'middle'
                 });
+                separators.push(yearText);
             }
+            // Mid-year
             else if (currentDate.getMonth() === 6) {
-                paper.line(dateX, smallStripeY, dateX, smallStripeY + 10).attr({
-                    class: 'separator'
-                });
+                var midYearSeparator = paper.line(dateX, smallStripeY, dateX, smallStripeY + 10);
+                separators.push(midYearSeparator);
             }
+            // Other months
             else {
-                paper.line(dateX, smallStripeY, dateX, smallStripeY + 5).attr({
-                    class: 'separator'
-                });
+                var monthSeparator = paper.line(dateX, smallStripeY, dateX, smallStripeY + 5);
+                separators.push(monthSeparator);
             }
             
             // Get date for previous month
             currentDate = new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1);
         }
+        
+        paper.group.apply(paper, separators).attr({
+            class: 'separators'
+        });
     }
     
-    function drawPeriod(paper, x, y, width, height, title, subtitle, textColor, backgroundColor, eventID, clickHandler) {
-        var periodRect = paper.rect(x, y, width, height, 3).attr({
+    function drawPeriod(paper, x, y, width, height, title, subtitle, textColor, backgroundColor, eventID, animationDuration, clickHandler) {
+        var periodRect = paper.rect(x, y, width, height).attr({
             fill: backgroundColor,
             stroke: textColor,
-            strokeWidth: 0
+            strokeWidth: 0,
+            rx: 3,
+            ry: 3
         });
         
         var padding = 8;
@@ -204,25 +216,24 @@ define([
         var subtitleWidth = subtitleText.getBBox().width;
         var requiredWidth = Math.max(titleWidth, subtitleWidth);
         
-        var duration = 200;
         group.hover(function () {
-            periodRect.animate({ fill: textColor }, duration);
-            titleText.animate({ fill: backgroundColor }, duration);
-            subtitleText.animate({ fill: backgroundColor }, duration);
+            periodRect.animate({ fill: textColor }, animationDuration);
+            titleText.animate({ fill: backgroundColor }, animationDuration);
+            subtitleText.animate({ fill: backgroundColor }, animationDuration);
             
             if (requiredWidth + 2 * padding > width) {
-                periodRect.animate({ width: requiredWidth + 2 * padding }, duration);
-                titleClipPathRect.animate({ width: titleWidth }, duration);
-                subtitleClipPathRect.animate({ width: subtitleWidth }, duration);
+                periodRect.animate({ width: requiredWidth + 2 * padding }, animationDuration);
+                titleClipPathRect.animate({ width: titleWidth }, animationDuration);
+                subtitleClipPathRect.animate({ width: subtitleWidth }, animationDuration);
             }
         }, function () {
-            periodRect.animate({ fill: backgroundColor }, duration);
-            titleText.animate({ fill: textColor }, duration);
-            subtitleText.animate({ fill: textColor }, duration);
+            periodRect.animate({ fill: backgroundColor }, animationDuration);
+            titleText.animate({ fill: textColor }, animationDuration);
+            subtitleText.animate({ fill: textColor }, animationDuration);
             if (requiredWidth + 2 * padding > width) {
-                periodRect.animate({ width: width }, duration);
-                titleClipPathRect.animate({ width: width - 2 * padding }, duration);
-                subtitleClipPathRect.animate({ width: width - 2 * padding }, duration);
+                periodRect.animate({ width: width }, animationDuration);
+                titleClipPathRect.animate({ width: width - 2 * padding }, animationDuration);
+                subtitleClipPathRect.animate({ width: width - 2 * padding }, animationDuration);
             }
         });
         
@@ -231,27 +242,36 @@ define([
         });
     }
     
-    function drawMilestone(paper, milestoneX, milestoneY, radius, imageSrc, textColor, eventID, clickHandler) {
-        var milestoneImage = paper.image(imageSrc, milestoneX - radius, milestoneY - radius, radius * 2, radius * 2).attr({
+    function drawMilestone(paper, milestoneX, milestoneY, radius, imageSrc, textColor, eventID, animationDuration, clickHandler) {
+        var clipPathRect = paper.rect(milestoneX - radius, milestoneY - radius, radius * 2, radius * 2).attr({
+            rx: 7,
+            ry: 7
+        });
+        
+        var milestoneImage = paper.image(imageSrc, milestoneX - radius, milestoneY - radius, radius * 2, radius * 2).attr({ clipPath: clipPathRect });
+        
+        var overlayRect = paper.rect(milestoneX - radius, milestoneY - radius, radius * 2, radius * 2).attr({
+            fill: '#000',
+            opacity: 0,
+            rx: 7,
+            ry: 7
+        });
+        
+        var group = paper.group(milestoneImage, overlayRect).attr({
             class: 'milestone'
         });
         
-        var duration = 300;
-        milestoneImage.hover(function () {
-            milestoneImage.animate({
-                transform: 'r' + [15, [milestoneX, milestoneY]]
-            }, duration * 1/4, function () {
-                milestoneImage.animate({
-                    transform: 'r' + [-15, [milestoneX, milestoneY]]
-                }, duration * 2/4, function () {
-                    milestoneImage.animate({
-                        transform: 'r' + [0, [milestoneX, milestoneY]]
-                    }, duration * 1/4);
-                });
-            });
+        group.hover(function () {
+            overlayRect.animate({
+                opacity: 0.2
+            }, animationDuration);
+        }, function () {
+            overlayRect.animate({
+                opacity: 0
+            }, animationDuration);
         });
         
-        milestoneImage.click(function () {
+        group.click(function () {
             clickHandler(eventID);
         });
     }

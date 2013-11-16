@@ -18,25 +18,40 @@
     .period {
         cursor: pointer;
         
-        text {
-            &.title {
-                font-size: 14px;
-                font-weight: normal;
-            }
+        text.title {
+            font-size: 14px;
+            font-weight: normal;
+        }
             
-            &.subtitle {
-                font-size: 14px;
-                font-weight: 200;
-            }
+        text.subtitle {
+            font-size: 14px;
+            font-weight: 200;
         }
     }
     
     .milestone {
         cursor: pointer;
+        
+        image {
+            filter: grayscale(100%);
+        }
+//        stroke: blue;
+//        stroke-width: 2px;
+//        filter: grayscale(100%);
+        
+//        &:hover {
+//            cursor: pointer;
+//            width: 200;
+////            stroke: blue;
+////            stroke-width: 2px;
+//////            filter: grayscale(100%);
+//        }
     }
     
-    .edge-border {
-        stroke: #666;
+    .edges {
+        line {
+            stroke: #666;
+        }
     }
     
     .marker {
@@ -51,15 +66,17 @@
         }
     }
     
-    @separator-color: #A3AFB2;
-    
-    .separator {
-        stroke: @separator-color;
-    }
-    
-    .year {
-        font-size: 18px;
-        font-weight: 200;
-        fill: @separator-color;
+    .separators {
+        @separator-color: #A3AFB2;
+        
+        line {
+            stroke: @separator-color;
+        }
+        
+        text {
+            font-size: 18px;
+            font-weight: 200;
+            fill: @separator-color;
+        }
     }
 }
