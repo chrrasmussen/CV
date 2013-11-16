@@ -3,9 +3,9 @@ define([
 ], function (app) {
     'use strict';
     
-//    app.config(function($locationProvider) {
-//        $locationProvider.html5Mode(true);
-//    });
+    app.config(function($locationProvider) {
+        $locationProvider.html5Mode(true);
+    });
     
     app.config(function($routeProvider) {
         $routeProvider.when('/:id', {

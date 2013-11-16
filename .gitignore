@@ -1,4 +1,5 @@
-/app/build/
+# AngularJS rules (https://github.com/angular/angular.js/blob/master/.gitignore)
+/build/
 .DS_Store
 gen_docs.disable
 test.disable
@@ -8,12 +9,17 @@ performance/temp*.html
 *~
 *.swp
 angular.js.tmproj
-/app/node_modules/
-/app/components/
-/app/bower_components/
+/node_modules/
+/components/
+/bower_components/
 angular.xcodeproj
 .idea
 .agignore
 libpeerconnection.log
 npm-debug.log
 /tmp/
+
+# Custom rules
+/public/bower_components/
+/public/data/
+harp.json
