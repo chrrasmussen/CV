@@ -4,14 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
         <link href="styles/app.css" rel="stylesheet" />
-        <link href="styles/timeline.css" rel="stylesheet" />
         <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-<!--        <base href="<%= baseURL %>">-->
+        <base href="<%= baseURL %>">
         <title>Christian Rasmussen</title>
     </head>
+    
     <body ng-controller="MainCtrl" style="background-color: {{backgroundColor}}; color: {{textColor}};">
         <header>
-            <h1><a href="#/">Christian Rasmussen</a></h1>
+            <h1><a href="/">Christian Rasmussen</a></h1>
             <table>
                 <tr>
                     <th>Date of Birth</th>
@@ -38,7 +38,7 @@
         
         <timeline start-at="2003-07-01" end-at="2014-07-01" data="timelineData" click="showEvent(eventID)"></timeline>
         
-        <div class="main clearfix" ng-view></div>
+        <main ng-view></main>
         
         <footer>
             Built with

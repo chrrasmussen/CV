@@ -2,7 +2,8 @@ define([
     'require',
     'angular',
     './app',
-    './routes',
+    './initializers/html5mode',
+    './initializers/routes',
 ], function (require, angular) {
     'use strict';
     
