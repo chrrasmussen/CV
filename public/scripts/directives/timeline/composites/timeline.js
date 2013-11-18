@@ -45,7 +45,7 @@ define([
         this.lanes.y = this.verticalMargin;
         this.lanes.width = this.width;
         this.lanes.height = this.heightPerLane * this.data.length;
-        console.log(this.data);
+        
         this.lanes.titles = this.data.map(function (element) {
             return element.title;
         });

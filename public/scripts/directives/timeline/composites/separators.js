@@ -30,7 +30,7 @@ define([
         
         var endAtDate = new Date(Date.parse(this.endAt));
         var startAtDate = new Date(Date.parse(this.startAt));
-        console.log(this.separators);
+        
         var index = 0;
         var currentDate = new Date(endAtDate.getFullYear(), endAtDate.getMonth(), 1);
         while (currentDate.getTime() >= startAtDate.getTime()) {

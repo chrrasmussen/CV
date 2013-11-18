@@ -25,6 +25,12 @@ define([
             $scope.timelineData = data;
         });
         
+        // TODO: Temp
+        $scope.lengthPerMonth = 40;
+        $scope.adjustLengthPerMonth = function (lengthPerMonth) {
+            $scope.lengthPerMonth = lengthPerMonth;
+        };
+        
         console.log('MainCtrl loaded');
     });
 });

@@ -12,7 +12,8 @@ define([
                 startAt: '@',
                 endAt: '@',
                 data: '=',
-                click: '&'
+                click: '&',
+                lengthPerMonth: '='
             },
             replace: true,
             template: '<div class="timeline"></div>',
@@ -28,7 +29,7 @@ define([
                             endAt: tAttrs.endAt,
                             headerRowSize: 30,
                             verticalMargin: 10,
-                            lengthPerMonth: 35,
+                            lengthPerMonth: 40,
                             heightPerLane: 56,
                             heightPerEvent: 40,
                             monthSeparatorHeight: 5,
@@ -40,11 +41,12 @@ define([
                         var height = 2 * config.verticalMargin + scope.data.length * config.heightPerLane + config.headerRowSize;
                         var paper = snap(width, height);
                         
-                        var timeline = new Timeline(paper, 5000);
+                        var timeline = new Timeline(paper, 500);
                         timeline.width = width;
                         timeline.height = height;
                         timeline.startAt = tAttrs.startAt;
                         timeline.endAt = tAttrs.endAt;
+                        timeline.lengthPerMonth = 40;
                         timeline.clickHandler = function (eventID) {
                             scope.$apply(function () {
                                 scope.click({ eventID: eventID });
@@ -54,10 +56,11 @@ define([
                         timeline.data = scope.data;
                         timeline.update(false);
                         
-                        timeline.lengthPerMonth = 20;
-                        timeline.update(true);
+                        scope.$watch('lengthPerMonth', function () {
+                            timeline.lengthPerMonth = scope.lengthPerMonth;
+                            timeline.update(true);
+                        });
                         
-                        console.log(scope.data);
                         var timelineNode = paper.node;
                         tElement.append(timelineNode);
                         var compiled = $compile(timelineNode);
