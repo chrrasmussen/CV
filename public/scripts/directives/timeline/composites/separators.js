@@ -1,8 +1,8 @@
 define([
     '../utils',
     './group',
-    '../leaves/El',
-    '../leaves/Text'
+    '../leaves/el',
+    '../leaves/text'
 ], function (utils, Group, El, Text) {
     'use strict';
     
