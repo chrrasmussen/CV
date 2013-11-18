@@ -1,3 +1,4 @@
 define([
-    './timeline'
+    './timeline',
+    './clip_path',
 ], function () {});
