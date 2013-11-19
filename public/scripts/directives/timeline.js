@@ -1,8 +1,9 @@
 define([
     './module',
     'snap',
-    './timeline/composites/timeline',
-], function (module, snap, Timeline) {
+    './timeline/utils',
+    './timeline/composites/timeline'
+], function (module, snap, utils, Timeline) {
     'use strict';
     
     module.directive('timeline', function($compile) {
@@ -12,8 +13,7 @@ define([
                 startAt: '@',
                 endAt: '@',
                 data: '=',
-                click: '&',
-                lengthPerMonth: '='
+                click: '&'
             },
             replace: true,
             template: '<div class="timeline"></div>',
@@ -37,7 +37,7 @@ define([
                             animationDuration: 200
                         };
                         
-                        var width = lengthBetweenDates(config.startAt, config.endAt, config.lengthPerMonth);
+                        var width = utils.lengthBetweenDates(config.startAt, config.endAt, config.lengthPerMonth);
                         var height = 2 * config.verticalMargin + scope.data.length * config.heightPerLane + config.headerRowSize;
                         var paper = snap(width, height);
                         
@@ -56,11 +56,6 @@ define([
                         timeline.data = scope.data;
                         timeline.update(false);
                         
-                        scope.$watch('lengthPerMonth', function () {
-                            timeline.lengthPerMonth = scope.lengthPerMonth;
-                            timeline.update(true);
-                        });
-                        
                         var timelineNode = paper.node;
                         tElement.append(timelineNode);
                         var compiled = $compile(timelineNode);
@@ -70,11 +65,4 @@ define([
             }
         };
     });
-    
-    function lengthBetweenDates(startAt, endAt, lengthPerMonth) {
-        var startAtTime = Date.parse(startAt);
-        var endAtTime = Date.parse(endAt);
-        var monthInMilliseconds = (30.4375 * 24 * 60 * 60 * 1000);
-        return (endAtTime - startAtTime) / monthInMilliseconds * lengthPerMonth;
-    }
 });

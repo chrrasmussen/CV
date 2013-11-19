@@ -36,13 +36,7 @@
             </table>
         </header>
         
-        <div class="btn-group" style="left: 50%; margin-left: -120px;">
-            <button type="button" class="btn btn-default" ng-click="adjustLengthPerMonth(20)">Compress</button>
-            <button type="button" class="btn btn-default" ng-click="adjustLengthPerMonth(40)">Normal</button>
-            <button type="button" class="btn btn-default" ng-click="adjustLengthPerMonth(60)">Expand</button>
-        </div>
-        
-        <timeline start-at="2003-07-01" end-at="2014-07-01" length-per-month="lengthPerMonth" data="timelineData" click="showEvent(eventID)"></timeline>
+        <timeline start-at="2003-07-01" end-at="2014-07-01" data="timelineData" click="showEvent(eventID)"></timeline>
         
         <main ng-view></main>
         
