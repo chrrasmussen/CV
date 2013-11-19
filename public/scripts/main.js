@@ -4,8 +4,7 @@ require.config({
         'angular': '../bower_components/angular/angular',
         'angular-route': '../bower_components/angular-route/angular-route',
         'angular-animate': '../bower_components/angular-animate/angular-animate',
-        'snap': '../bower_components/Snap.svg/dist/snap.svg',
-        'jquery': '../bower_components/jquery/jquery'
+        'snap': '../bower_components/Snap.svg/dist/snap.svg'
     },
     shim: {
         'angular': {
