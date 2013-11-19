@@ -4,7 +4,7 @@ define([
     'use strict';
     
     app.config(function($routeProvider) {
-        $routeProvider.when('/:id', {
+        $routeProvider.when('/:id/', {
             templateUrl: 'partials/event.html',
             controller: 'EventCtrl',
             resolve: {

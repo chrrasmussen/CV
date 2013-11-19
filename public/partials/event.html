@@ -15,7 +15,9 @@
         <img ng-src="{{event.iconImage}}" width="100" height="100">
         <ul>
             <li ng-if="event.productPageLink"><a href="{{event.productPageLink}}">Product Page</a></li>
-            <li ng-if="event.previewLink"><a href="{{event.previewLink}}">Preview</a></li>
+            <li ng-if="event.previewLink"><a href="{{event.previewLink}}" target="_self">Preview</a></li>
+            <!-- target="_self" is a hack to avoid the routeProvider to hijack URL
+                 Source: http://stackoverflow.com/questions/11580004/angular-js-link-behaviour-disable-deep-linking-for-specific-urls -->
             <li ng-if="event.appStoreLink"><a href="{{event.appStoreLink}}">App Store</a></li>
             <li ng-if="event.videoLink"><a href="{{event.videoLink}}">Video</a></li>
             <li ng-if="event.sourceCodeLink"><a href="{{event.sourceCodeLink}}">Source Code</a></li>
