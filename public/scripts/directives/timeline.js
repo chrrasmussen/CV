@@ -41,7 +41,7 @@ define([
                         var height = 2 * config.verticalMargin + scope.data.length * config.heightPerLane + config.headerRowSize;
                         var paper = snap(width, height);
                         
-                        var timeline = new Timeline(paper, 500);
+                        var timeline = new Timeline(paper, 200);
                         timeline.width = width;
                         timeline.height = height;
                         timeline.startAt = tAttrs.startAt;

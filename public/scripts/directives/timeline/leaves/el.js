@@ -16,7 +16,7 @@ define([
     
     El.prototype.getNode = function () {
         if (!this.el) {
-            this.el = this.paper.el(this.type).attr(this.attr);
+            this.el = this.paper.el(this.type).attr(this.getAttr());
         }
         
         return this.el;
@@ -28,12 +28,16 @@ define([
         }
         else {
             if (animate) {
-                this.el.animate(this.attr, this.animationDuration);
+                this.el.animate(this.getAttr(), this.animationDuration);
             }
             else {
-                this.el.attr(this.attr);
+                this.el.attr(this.getAttr());
             }
         }
+    };
+    
+    El.prototype.getAttr = function () {
+        return this.attr;
     };
     
     return El;

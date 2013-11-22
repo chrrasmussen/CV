@@ -62,6 +62,7 @@ define([
                     event.y = milestoneY;
                     event.radius = this.heightPerEvent / 2;
                     event.imageSrc = eventData.iconImage;
+                    event.backgroundColor = eventData.iconBackgroundColor;
                 }
                 
                 var clickHandler = this.clickHandler;

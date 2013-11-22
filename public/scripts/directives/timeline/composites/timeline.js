@@ -110,8 +110,6 @@ define([
         this.marker.y = dateMarkerY;
         this.marker.height = dateMarkerHeight;
         this.marker.update(animate);
-        
-        Group.prototype.update.call(this);
     };
     
     Timeline.prototype.getChildren = function () {
