@@ -31,7 +31,7 @@ define([
         });
         
         $routeProvider.otherwise({
-            redirectTo: '/ntnu'
+            redirectTo: '/bouvet'
         });
     });
     
