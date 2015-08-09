@@ -4,6 +4,8 @@ define([
     'use strict';
     
     module.controller('MainCtrl', function ($scope, $http, $location) {
+        $scope.timelineEndDate = calculateTimelineEndDate(new Date());
+        
         $scope.log = function (message) {
             console.log(message);
         };
@@ -30,6 +32,28 @@ define([
         $scope.adjustLengthPerMonth = function (lengthPerMonth) {
             $scope.lengthPerMonth = lengthPerMonth;
         };
+        
+        function calculateTimelineEndDate(date) {
+            var numberOfMonthsInTheFuture;
+            if (date.getMonth() <= 1) {
+                numberOfMonthsInTheFuture = 5 - date.getMonth();
+            }
+            else if (date.getMonth() > 1 && date.getMonth() <= 7) {
+                numberOfMonthsInTheFuture = 11 - date.getMonth();
+            }
+            else if (date.getMonth() > 7) {
+                numberOfMonthsInTheFuture = 11 - date.getMonth() + 6;
+            }
+            
+            date.setMonth(date.getMonth() + numberOfMonthsInTheFuture + 1); // Will overflow to the next year automatically
+            date.setDate(1); // First day of the month
+            
+            function pad(n) {
+                return (n < 10) ? ('0' + n) : n;
+            }
+            
+            return (date.getYear() + 1900)  + "-" + pad(date.getMonth() + 1) + "-" + pad(date.getDate());
+        }
         
         console.log('MainCtrl loaded');
     });
