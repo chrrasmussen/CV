@@ -15,23 +15,23 @@
             <table>
                 <tr>
                     <th>Date of Birth</th>
-                    <td>May 30, 1987 <span>— 27 years old</span></td>
+                    <td>{{about.dateOfBirth | date:'MMM d, yyyy'}} <span>— {{about.dateOfBirth | age}} years old</span></td>
                 </tr>
                 <tr>
                     <th>Address</th>
-                    <td>Søndre Berg 26D<br>7051 Trondheim</td>
+                    <td>{{about.address}}</td>
                 </tr>
                 <tr>
                     <th>Phone Number</th>
-                    <td>+47 908 85 117</td>
+                    <td>{{about.phoneNumber}}</td>
                 </tr>
                 <tr>
                     <th>Email</th>
-                    <td><a href="mailto:christian.rasmussen@me.com">christian.rasmussen@me.com</a></td>
+                    <td><a href="mailto:{{about.email}}">{{about.email}}</a></td>
                 </tr>
                 <tr>
                     <th>GitHub</th>
-                    <td><a href="http://github.com/chrrasmussen">chrrasmussen</a></td>
+                    <td><a href="http://www.github.com/{{about.github}}">{{about.github}}</a></td>
                 </tr>
             </table>
         </header>
