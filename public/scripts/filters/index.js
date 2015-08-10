@@ -1,3 +1,4 @@
 define([
-    './age'
+    './age',
+    './nl2br'
 ], function () {});
