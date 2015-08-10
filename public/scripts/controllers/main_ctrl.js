@@ -3,8 +3,8 @@ define([
 ], function (module) {
     'use strict';
     
-    module.controller('MainCtrl', function ($scope, $location, $q, events) {
-        $q.all([events.getBasicInfo(), events.getTimelineData()]).then(function (responses) {
+    module.controller('MainCtrl', function ($scope, $location, $q, api) {
+        $q.all([api.getBasicInfo(), api.getTimelineData()]).then(function (responses) {
             var basicInfo = responses[0];
             var timelineData = responses[1];
             

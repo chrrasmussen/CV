@@ -3,7 +3,7 @@ define([
 ], function (module) {
     'use strict';
     
-    module.factory('events', function($http) {
+    module.factory('api', function($http) {
         var fetchData = $http.get('data/en.json');
         
         function getBasicInfo() {

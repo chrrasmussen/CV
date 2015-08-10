@@ -1,4 +1,4 @@
 define([
-    './events',
+    './api',
     './prevent_anchor_scroll'
 ], function () {});

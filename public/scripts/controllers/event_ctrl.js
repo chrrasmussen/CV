@@ -3,8 +3,8 @@ define([
 ], function (module) {
     'use strict';
     
-    module.controller('EventCtrl', function ($scope, $location, $routeParams, events) {
-        events.getTimelineData().then(function (data) {
+    module.controller('EventCtrl', function ($scope, $location, $routeParams, api) {
+        api.getTimelineData().then(function (data) {
             // If no ID is set, navigate to default event
             if (!$routeParams.id) {
                 var firstEvent = findFirstEvent(data);
