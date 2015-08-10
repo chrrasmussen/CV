@@ -292,7 +292,6 @@
                         "mysql",
                         "php"
                     ],
-                    "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview/",
                     "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp"
                 },
                 {
@@ -309,7 +308,6 @@
                         "obj-c"
                     ],
                     "productPageLink": "http://friendlyloan.rasmussen.io",
-                    "appStoreLink": "http://itunes.com/apps/friendlyloan",
                     "description": "FriendlyLoan helps you remember when, where and why you borrowed or lent money.\n\nEasily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization."
                 },
                 {
@@ -375,8 +373,7 @@
                         "css",
                         "javascript",
                         "php"
-                    ],
-                    "previewLink": "http://christian.rasmussen.io/cv/f1-project/preview/"
+                    ]
                 },
                 {
                     "id": "ifknorge",
@@ -393,8 +390,7 @@
                         "css",
                         "php",
                         "mysql"
-                    ],
-                    "previewLink": "http://christian.rasmussen.io/cv/ifknorge/preview/"
+                    ]
                 }
             ]
         }
