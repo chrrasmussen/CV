@@ -2,6 +2,12 @@
 @import "./flexbox.less";
 @import "./timeline.less";
 
+// Avoid Mustache tags from showing on load
+// SOURCE: https://docs.angularjs.org/api/ng/directive/ngCloak
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 body {
     transition: all 1s;
 }
