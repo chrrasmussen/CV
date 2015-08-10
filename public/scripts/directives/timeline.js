@@ -20,7 +20,7 @@ define([
             compile: function (tElement, tAttrs) {
                 return function(scope, element, attrs) {
                     scope.$watch('data', function () {
-                        if (scope.data.length === 0) {
+                        if (!scope.data || scope.data.length === 0) {
                             return;
                         }
                         
