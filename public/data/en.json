@@ -292,7 +292,8 @@
                         "mysql",
                         "php"
                     ],
-                    "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp"
+                    "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp",
+                    "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview"
                 },
                 {
                     "id": "friendlyloan",
@@ -373,7 +374,8 @@
                         "css",
                         "javascript",
                         "php"
-                    ]
+                    ],
+                    "previewLink": "http://christian.rasmussen.io/cv/f1-project/preview"
                 },
                 {
                     "id": "ifknorge",
@@ -390,7 +392,8 @@
                         "css",
                         "php",
                         "mysql"
-                    ]
+                    ],
+                    "previewLink": "http://christian.rasmussen.io/cv/ifknorge/preview"
                 }
             ]
         }
