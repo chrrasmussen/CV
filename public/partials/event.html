@@ -19,7 +19,7 @@
             <!-- target="_self" is a hack to avoid the routeProvider to hijack URL
                  Source: http://stackoverflow.com/questions/11580004/angular-js-link-behaviour-disable-deep-linking-for-specific-urls -->
             <li ng-if="event.appStoreLink"><a href="{{event.appStoreLink}}">App Store</a></li>
-            <li ng-if="event.videoLink"><a href="{{event.videoLink}}">Video</a></li>
+            <li ng-if="event.videoLink"><a href="{{event.videoLink}}" target="_self">Video</a></li>
             <li ng-if="event.sourceCodeLink"><a href="{{event.sourceCodeLink}}">Source Code</a></li>
         </ul>
     </aside>
