@@ -372,7 +372,8 @@
               "php"
             ],
           "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp",
-          "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview"
+          "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview",
+          "description": "BlogApp is a web-application for blogging. It contains basic functionality for reading and writing blog posts, as well as functionality for commenting on these blog posts. My goal was to create a dynamic and user-friendly blog system.\n\nThe web-application was created as part of the subject \"Databases and Web\" at Telemark University College."
         },
         {
           "id": "friendlyloan",
@@ -406,7 +407,8 @@
             "obj-c",
             "couchdb"
           ],
-          "videoLink": "data/videos/global-bms-builder-demo.mp4"
+          "videoLink": "data/videos/global-bms-builder-demo.mp4",
+          "description": "Global BMS Builder is an iPad application for programming control systems. The application was supposed to control Schneider-Electric's StruxureWare platform.\n\nThe application was created as a part of the my Bachelor thesis, conducted at Telemark University College in Spring 2011."
         },
         {
           "id": "sudoku-app",
@@ -423,7 +425,7 @@
             "c#"
           ],
           "sourceCodeLink": "http://github.com/chrrasmussen/SudokuApplication",
-          "description": "SudokuApplication was developed by students attending Telemark University College, as a 6. semester project in the subject Object-oriented programming, Spring 2011.\n\nStudents participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
+          "description": "SodukoApp is a Windows application for playing the game Sudoku. It has functionality such as different board sizes, a Sudoku solver, importing and exporting games, error indication and notes.\n\nThe application was part of the  subject \"Object-oriented programming\" conducted at Telemark University College, Spring 2011. Students participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
         },
         {
           "id": "tac-vista-for-iphone",
@@ -438,15 +440,18 @@
           "technologies": [
             "ios",
             "obj-c",
-            "vb.net"
+            "windows",
+            "vb.net",
+            "com"
           ],
-          "videoLink": "data/videos/tac-vista-for-iphone-demo.mp4"
+          "videoLink": "data/videos/tac-vista-for-iphone-demo.mp4",
+          "description": "TAC Vista for iPhone is a mobile application that integrates with Schneider-Electric's software named TAC Vista. TAC Vista is as platform that controls and monitors PLCs.\n\nThe mobile application has functionality for listing the object structure, as well as reading and writing values from/to TAC Vista. This was achieved by creating a proxy server (VB.net) that runs on the same machine that runs TAC Vista. The mobile application communicates with the proxy server (which is discovered via Bonjour)."
         },
         {
           "id": "f1-project",
           "type": "milestone",
           "date": "2008-12-01",
-          "title": "F1 project",
+          "title": "F1-project",
           "iconImage": "data/icons/f1-project.png",
           "iconBackgroundColor": "#EEF6FF",
           "textColor": "#4773B2",
@@ -459,13 +464,14 @@
             "javascript",
             "php"
           ],
-          "previewLink": "http://christian.rasmussen.io/cv/f1-project/preview"
+          "previewLink": "http://christian.rasmussen.io/cv/f1-project/preview",
+          "description": "F1-project is a website that showcases a report named \"Analysis and modeling of meteorological data\".\n\nThis website was part of the subject \"F1-project\" conducted at Telemark University College in Fall 2008. Students participating in the project were Erik Barsøe, André Skare Berg, Christer Sørvik, Andreas Vaa, Matias Wilhelmsen and Christian Rasmussen."
         },
         {
           "id": "ifknorge",
           "type": "milestone",
           "date": "2005-10-28",
-          "title": "IFK Norge",
+          "title": "IFK Norway",
           "iconImage": "data/icons/ifknorge.png",
           "iconBackgroundColor": "black",
           "textColor": "#F6DB00",
@@ -478,7 +484,8 @@
             "php",
             "mysql"
           ],
-          "previewLink": "http://christian.rasmussen.io/cv/ifknorge/preview"
+          "previewLink": "http://christian.rasmussen.io/cv/ifknorge/preview",
+          "description": "A website that formerly represented the karate organization named IFK Norway. It remained IFK Norway's website until the end of 2011."
         }
       ]
     }
