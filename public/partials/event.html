@@ -27,8 +27,7 @@
     <div class="time">
         {{event.date | date:'mediumDate'}}
     </div>
-    <div class="info">
-        {{event.description || 'No description.'}}
+    <div class="info" ng-bind-html="(event.description || 'No description.') | nl2br">
     </div>
     <div class="technologies">
         <h3>Technologies</h3>
