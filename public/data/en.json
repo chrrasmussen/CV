@@ -25,7 +25,7 @@
             "image": "data/logos/ntnu.png",
             "width": 60,
             "height": 60,
-            "link": "http://ntnu.no"
+            "link": "http://www.ntnu.no"
           }
         },
         {
@@ -42,7 +42,7 @@
             "image": "data/logos/hit.png",
             "width": 150,
             "height": 50,
-            "link": "http://hit.no"
+            "link": "http://www.hit.no"
           }
         },
         {
@@ -59,7 +59,7 @@
             "image": "data/logos/hit.png",
             "width": 150,
             "height": 50,
-            "link": "http://hit.no"
+            "link": "http://www.hit.no"
           }
         },
         {
@@ -91,7 +91,7 @@
             "image": "data/logos/bouvet.png",
             "width": 150,
             "height": 39,
-            "link": "http://bouvet.no"
+            "link": "http://www.bouvet.no"
           }
         },
         {
@@ -108,7 +108,7 @@
             "image": "data/logos/bekk.png",
             "width": 140,
             "height": 50,
-            "link": "http://bekk.no"
+            "link": "http://www.bekk.no"
           }
         },
         {
@@ -125,7 +125,7 @@
             "image": "data/logos/schneider-electric.png",
             "width": 130,
             "height": 40,
-            "link": "http://schneider-electric.no"
+            "link": "http://www.schneider-electric.no"
           }
         },
         {
@@ -142,7 +142,7 @@
             "image": "data/logos/schneider-electric.png",
             "width": 130,
             "height": 40,
-            "link": "http://schneider-electric.no"
+            "link": "http://www.schneider-electric.no"
           }
         },
         {
@@ -159,7 +159,7 @@
             "image": "data/logos/schneider-electric.png",
             "width": 130,
             "height": 40,
-            "link": "http://schneider-electric.no"
+            "link": "http://www.schneider-electric.no"
           }
         },
         {
@@ -176,7 +176,7 @@
             "image": "data/logos/schneider-electric.png",
             "width": 130,
             "height": 40,
-            "link": "http://schneider-electric.no"
+            "link": "http://www.schneider-electric.no"
           }
         }
       ]
@@ -198,7 +198,7 @@
             "image": "data/logos/smit.png",
             "width": 70,
             "height": 70,
-            "link": "http://studentmediene.no"
+            "link": "http://www.studentmediene.no"
           }
         }
       ]
@@ -310,8 +310,8 @@
             "nginx",
             "docker"
           ],
-          "productPageLink": "http://mattilbud.com",
-          "appStoreLink": "https://itunes.apple.com/no/app/mattilbud/id702243892?mt=8",
+          "productPageLink": "http://www.mattilbud.com",
+          "appStoreLink": "http://appstore.com/mattilbud",
           "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS, Android and Windows Phone. As of June 12th, 2016 the application has been downloaded more than 600 000 times and it has about 150 000 weekly users.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen."
         },
         {
@@ -329,8 +329,8 @@
             "obj-c",
             "nodejs"
           ],
-          "productPageLink": "http://dusken.no/barteguiden/",
-          "appStoreLink": "http://itunes.com/apps/barteguiden",
+          "productPageLink": "http://www.dusken.no/barteguiden/",
+          "appStoreLink": "http://appstore.com/barteguiden",
           "sourceCodeLink": "http://github.com/dusken/Kulturkalender-iOS",
           "description": "Barteguiden is a mobile application that shows an overview of cultural events in Trondheim, such as concerts, presentations, exhibitions and the like.\n\nThe application includes functionality such as showing basic information about the event, e.g. description, price, location, link to website, etc. Additionally it supports filtering by featured events, paid/free events, categories, adding events to favorites and adding events to your own calendar.\n\nThe application was developed by the voluntary organization Studentmediene i Trondheim AS."
         },
