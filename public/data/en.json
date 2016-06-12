@@ -207,6 +207,27 @@
       "title": "Projects",
       "content": [
         {
+          "id": "fix-my-city",
+          "type": "milestone",
+          "date": "2016-04-23",
+          "title": "Fix My City",
+          "iconImage": "data/icons/fix-my-city.png",
+          "iconBackgroundColor": "white",
+          "textColor": "#2A2A2A",
+          "backgroundColor": "white",
+          "normalTextColor": "black",
+          "technologies": [
+            "html",
+            "css",
+            "javascript",
+            "ionic-framework",
+            "cordova"
+          ],
+          "videoLink": "data/videos/fix_my_city.mp4",
+          "sourceCodeLink": "https://bitbucket.org/stavangerhackaton/mobile",
+          "description": "Mobile application that makes it easy for citizens to report problems in their local area. The application includes functionality such as retrieving your current location, take a photograph, listing nearby reports and showing a map.\n\nWinner of the category \"Best design\" at Stavanger Hackathon 2016.\n\nThe team consisted of Sigve Hølland, Christer Nordbø and Christian Rasmussen.</a>"
+        },
+        {
           "id": "etilbud",
           "type": "milestone",
           "date": "2014-11-13",
