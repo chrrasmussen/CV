@@ -6,9 +6,6 @@
     <div class="time">
         {{event.startAt | date:'mediumDate'}} — {{(event.endAt | date:'mediumDate') || 'Today'}}
     </div>
-    <div class="info">
-        {{event.description || 'No description.'}}
-    </div>
 </div>
 <div ng-if="isMilestone">
     <aside class="pull-right">
