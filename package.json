@@ -1,0 +1,24 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "An interactive CV for Christian Rasmussen. It is built using Twitter Bootstrap, AngularJS, RequireJS, Snap.svg",
+  "private": true,
+  "dependencies": {
+    "harp": "^0.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/harp server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrrasmussen/CV.git"
+  },
+  "author": "Christian Rasmussen <christian.rasmussen@me.com> (http://christian.rasmussen.io)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/chrrasmussen/CV/issues"
+  },
+  "homepage": "http://christian.rasmussen.io/cv"
+}
