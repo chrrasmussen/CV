@@ -1,6 +1,9 @@
 <div ng-if="isPeriod">
     <aside class="pull-right">
-        <a href="{{event.logo.link}}"><img ng-if="event.logo" ng-src="{{event.logo.image}}" width="{{event.logo.width}}" height="{{event.logo.height}}"></a>
+        <img ng-if="event.logo" ng-src="{{event.logo.image}}" width="{{event.logo.width}}" height="{{event.logo.height}}">
+        <ul>
+            <li ng-if="event.logo.link"><a href="{{event.logo.link}}">Website</a></li>
+        </ul>
     </aside>
     <h2 style="color: {{event.textColor}}">{{event.title}}</h2>
     <div class="time">
