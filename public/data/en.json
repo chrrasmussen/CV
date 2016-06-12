@@ -217,6 +217,7 @@
           "backgroundColor": "white",
           "normalTextColor": "black",
           "technologies": [
+            "web",
             "html",
             "css",
             "javascript",
@@ -225,7 +226,7 @@
           ],
           "videoLink": "data/videos/fix-my-city-demo.mp4",
           "sourceCodeLink": "https://bitbucket.org/stavangerhackaton/mobile",
-          "description": "Mobile application that makes it easy for citizens to report problems in their local area. The application includes functionality such as retrieving your current location, take a photograph, listing nearby reports and showing a map.\n\nWinner of the category \"Best design\" at Stavanger Hackathon 2016.\n\nThe team consisted of Sigve Hølland, Christer Nordbø and Christian Rasmussen.</a>"
+          "description": "Fix My City is a mobile application that makes it easy for citizens to report problems in their local area. The application includes functionality such as retrieving your current location, take a photograph, listing nearby reports and showing reports on a map.\n\nWinner of the category \"Best design\" at Stavanger Hackathon 2016.\n\nThe team consisted of Sigve Hølland, Christer Nordbø and Christian Rasmussen.</a>"
         },
         {
           "id": "etilbud",
@@ -238,10 +239,11 @@
           "backgroundColor": "white",
           "normalTextColor": "black",
           "technologies": [
+            "ios",
             "obj-c",
             "php"
           ],
-          "appStoreLink": "https://itunes.apple.com/no/app/etilbud/id930154739?mt=8"
+          "description": "ETilbud is a mobile applications that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in neither the App Store nor Google Play."
         },
         {
           "id": "mattilbud",
@@ -254,11 +256,18 @@
           "backgroundColor": "white",
           "normalTextColor": "black",
           "technologies": [
+            "ios",
             "obj-c",
-            "php"
+            "swift",
+            "php",
+            "elixir",
+            "phoenix-framework",
+            "nginx",
+            "docker"
           ],
           "productPageLink": "http://mattilbud.com",
-          "appStoreLink": "https://itunes.apple.com/no/app/mattilbud/id702243892?mt=8"
+          "appStoreLink": "https://itunes.apple.com/no/app/mattilbud/id702243892?mt=8",
+          "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS, Android and Windows Phone. As of June 12th, 2016 the application has been downloaded more than 600 000 times and it has about 150 000 weekly users.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen."
         },
         {
           "id": "barteguiden",
@@ -271,17 +280,19 @@
           "backgroundColor": "#F7FDFF",
           "normalTextColor": "#333",
           "technologies": [
+            "ios",
             "obj-c",
             "nodejs"
           ],
-          "productPageLink": "http://barteguiden.no",
+          "productPageLink": "http://dusken.no/barteguiden/",
           "appStoreLink": "http://itunes.com/apps/barteguiden",
-          "sourceCodeLink": "http://github.com/dusken/Kulturkalender-iOS"
+          "sourceCodeLink": "http://github.com/dusken/Kulturkalender-iOS",
+          "description": "Barteguiden is a mobile application that shows an overview of cultural events in Trondheim, such as concerts, presentations, exhibitions and the like.\n\nThe application includes functionality such as showing basic information about the event, e.g. description, price, location, link to website, etc. Additionally it supports filtering by featured events, paid/free events, categories, adding events to favorites and adding events to your own calendar.\n\nThe application was developed by the voluntary organization Studentmediene i Trondheim AS."
         },
         {
           "id": "tineapp",
           "type": "milestone",
-          "date": "2013-05-06",
+          "date": "2013-04-14",
           "title": "TineApp",
           "iconImage": "data/icons/tineapp.png",
           "iconBackgroundColor": "white",
@@ -289,12 +300,14 @@
           "backgroundColor": "#FFFCFD",
           "normalTextColor": "#333",
           "technologies": [
+            "web",
             "html",
             "css",
             "javascript",
             "php",
             "mysql"
-          ]
+          ],
+          "description": "TineApp is a mobile application that helps farmers when naming their milk cows. It includes functionality such as top charts for most popular cow names, both for the whole country and in your local area, searching for cow names and displaying a plot of yearly popularity for a cow name.\n\nThe application won the 1st prize of Capra Code Challenge 2013.\n\nThe team consisted of Magnus Bae, Anders Bøe, Øyvind Høisæther, Sigbjørn Lund Olsen, Eirik Vigeland, David Åse and Christian Rasmussen."
         },
         {
           "id": "blogapp",
@@ -327,10 +340,11 @@
           "backgroundColor": "#FCFBDE",
           "normalTextColor": "#333",
           "technologies": [
+            "ios",
             "obj-c"
           ],
           "productPageLink": "http://friendlyloan.rasmussen.io",
-          "description": "FriendlyLoan helps you remember when, where and why you borrowed or lent money.\n\nEasily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization."
+          "description": "FriendlyLoan is a mobile application that helps you remember when, where and why you borrowed or lent money. Easily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization.\n\nNote: The application is no longer available in the App Store."
         },
         {
           "id": "global-bms-builder",
@@ -343,6 +357,7 @@
           "backgroundColor": "#F7FFFB",
           "normalTextColor": "#333",
           "technologies": [
+            "ios",
             "obj-c",
             "couchdb"
           ],
@@ -359,10 +374,11 @@
           "backgroundColor": "#C8D1DA",
           "normalTextColor": "#333",
           "technologies": [
+            "windows",
             "c#"
           ],
           "sourceCodeLink": "http://github.com/chrrasmussen/SudokuApplication",
-          "description": "SudokuApplication was developed by students attending Telemark University College, as a 6. semester project in the subject Object-oriented programming, spring 2011. Students participating in this project were: Christian Rasmussen, Erik Barsøe and Henrik Hopen."
+          "description": "SudokuApplication was developed by students attending Telemark University College, as a 6. semester project in the subject Object-oriented programming, Spring 2011.\n\nStudents participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
         },
         {
           "id": "tac-vista-for-iphone",
@@ -375,6 +391,7 @@
           "backgroundColor": "#FFFCFD",
           "normalTextColor": "#333",
           "technologies": [
+            "ios",
             "obj-c",
             "vb.net"
           ],
@@ -391,6 +408,7 @@
           "backgroundColor": "#F7FBFF",
           "normalTextColor": "#333",
           "technologies": [
+            "web",
             "html",
             "css",
             "javascript",
@@ -409,6 +427,7 @@
           "backgroundColor": "#f7faff",
           "normalTextColor": "#333",
           "technologies": [
+            "web",
             "html",
             "css",
             "php",
