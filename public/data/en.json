@@ -223,7 +223,7 @@
             "ionic-framework",
             "cordova"
           ],
-          "videoLink": "data/videos/fix_my_city.mp4",
+          "videoLink": "data/videos/fix-my-city-demo.mp4",
           "sourceCodeLink": "https://bitbucket.org/stavangerhackaton/mobile",
           "description": "Mobile application that makes it easy for citizens to report problems in their local area. The application includes functionality such as retrieving your current location, take a photograph, listing nearby reports and showing a map.\n\nWinner of the category \"Best design\" at Stavanger Hackathon 2016.\n\nThe team consisted of Sigve Hølland, Christer Nordbø and Christian Rasmussen.</a>"
         },
@@ -346,7 +346,7 @@
             "obj-c",
             "couchdb"
           ],
-          "videoLink": "data/videos/global_bms_builder_demo.mp4"
+          "videoLink": "data/videos/global-bms-builder-demo.mp4"
         },
         {
           "id": "sudoku-app",
@@ -378,7 +378,7 @@
             "obj-c",
             "vb.net"
           ],
-          "videoLink": "data/videos/tac_vista_for_iphone_demo.mp4"
+          "videoLink": "data/videos/tac-vista-for-iphone-demo.mp4"
         },
         {
           "id": "f1-project",
