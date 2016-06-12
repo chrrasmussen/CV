@@ -246,6 +246,51 @@
           "description": "ETilbud is a mobile applications that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in neither the App Store nor Google Play."
         },
         {
+          "id": "assignment-system",
+          "type": "milestone",
+          "date": "2014-09-15",
+          "title": "Assignment System",
+          "iconImage": "data/icons/assignment-system.png",
+          "iconBackgroundColor": "white",
+          "textColor": "#2A2A2A",
+          "backgroundColor": "#F6F6F6",
+          "normalTextColor": "#333",
+          "technologies": [
+            "web",
+            "html",
+            "css",
+            "websocket",
+            "java",
+            "akka",
+            "eclipse"
+          ],
+          "videoLink": "data/videos/assignment-system-demo.mp4",
+          "sourceCodeLink": "https://github.com/chrrasmussen/NTNU-Master-Project",
+          "description": "Assignment System is a website where students can submit their programming assignments. The focus for the website was to improve the development experience for the students. The students should be able to solve and deliver programming assignments without even needing to set up the development environment on their own computers.\n\nTo achieve this goal the website includes functionality for running code and tests, and it has an editor with syntax highlighting, error checking and code completion.\n\nThis website was created as a part of the Master thesis by David Åse and Christian Rasmussen, conducted at NTNU in the Spring 2014. The Master thesis was based on a pre-project by David Åse, conducted at NTNU in the Fall 2013."
+        },
+        {
+          "id": "cv",
+          "type": "milestone",
+          "date": "2013-12-10",
+          "title": "CV",
+          "iconImage": "data/icons/cv.png",
+          "iconBackgroundColor": "white",
+          "textColor": "#2A2A2A",
+          "backgroundColor": "#F6F6F6",
+          "normalTextColor": "#333",
+          "technologies": [
+            "web",
+            "html",
+            "css",
+            "javascript",
+            "twitter-bootstrap",
+            "angular",
+            "snap-svg"
+          ],
+          "sourceCodeLink": "https://github.com/chrrasmussen/CV",
+          "description": "You are looking at it!"
+        },
+        {
           "id": "mattilbud",
           "type": "milestone",
           "date": "2013-11-08",
