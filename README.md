@@ -11,7 +11,7 @@ The live version is available at http://christian.rasmussen.io/cv/
 ## Prerequisites
 
 - [Bower](http://bower.io)
-- [Harp](http://harpjs.com)
+- [NPM](https://www.npmjs.com)
 
 
 ## Installation
@@ -29,3 +29,8 @@ The live version is available at http://christian.rasmussen.io/cv/
 - Better browser support
 - Print version
 - Vertical design for mobile (for desktop as well?)
+
+
+## License
+
+MIT. See LICENSE for more information.
