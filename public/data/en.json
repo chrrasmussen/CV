@@ -226,7 +226,7 @@
           ],
           "videoLink": "data/videos/fix-my-city-demo.mp4",
           "sourceCodeLink": "https://bitbucket.org/stavangerhackaton/mobile",
-          "description": "Fix My City is a mobile application that makes it easy for citizens to report problems in their local area. The application includes functionality such as retrieving your current location, take a photograph, listing nearby reports and showing reports on a map.\n\nWinner of the category \"Best design\" at Stavanger Hackathon 2016.\n\nThe team consisted of Sigve Hølland, Christer Nordbø and Christian Rasmussen.</a>"
+          "description": "Fix My City is a mobile application that makes it easy for citizens to report problems in their local area. The application includes functionality such as retrieving your current location, taking a photograph, listing popular reports and also showing nearby reports on a map.\n\nWinner of the category \"Best design\" at Stavanger Hackathon 2016.\n\nThe team consisted of Sigve Hølland, Christer Nordbø and Christian Rasmussen.</a>"
         },
         {
           "id": "etilbud",
@@ -243,7 +243,7 @@
             "obj-c",
             "php"
           ],
-          "description": "ETilbud is a mobile applications that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in neither the App Store nor Google Play."
+          "description": "ETilbud is a mobile application that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in neither the App Store nor Google Play."
         },
         {
           "id": "assignment-system",
@@ -266,7 +266,7 @@
           ],
           "videoLink": "data/videos/assignment-system-demo.mp4",
           "sourceCodeLink": "https://github.com/chrrasmussen/NTNU-Master-Project",
-          "description": "Assignment System is a website where students can submit their programming assignments. The focus for the website was to improve the development experience for the students. The students should be able to solve and deliver programming assignments without even needing to set up the development environment on their own computers.\n\nTo achieve this goal the website includes functionality for running code and tests, and it has an editor with syntax highlighting, error checking and code completion.\n\nThis website was created as a part of the Master thesis by David Åse and Christian Rasmussen, conducted at NTNU in the Spring 2014. The Master thesis was based on a pre-project by David Åse, conducted at NTNU in the Fall 2013."
+          "description": "Assignment System is a website where students can submit their programming assignments. The focus for the website was to improve the development experience for the students. The students should be able to solve and deliver programming assignments without even needing to set up the development environment on their own computers.\n\nTo achieve this goal the website includes functionality for running code and tests, and it has an editor that supports syntax highlighting, error checking and code completion.\n\nThis website was created as a part of the Master thesis by David Åse and Christian Rasmussen, conducted at NTNU in the Spring 2014. The Master thesis was based on a pre-project by David Åse, conducted at NTNU in the Fall 2013."
         },
         {
           "id": "cv",
@@ -283,7 +283,6 @@
             "html",
             "css",
             "javascript",
-            "twitter-bootstrap",
             "angular",
             "snap-svg"
           ],
@@ -302,8 +301,8 @@
           "normalTextColor": "black",
           "technologies": [
             "ios",
-            "obj-c",
             "swift",
+            "obj-c",
             "php",
             "elixir",
             "phoenix-framework",
@@ -373,7 +372,7 @@
             ],
           "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp",
           "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview",
-          "description": "BlogApp is a web-application for blogging. It contains basic functionality for reading and writing blog posts, as well as functionality for commenting on these blog posts. My goal was to create a dynamic and user-friendly blog system.\n\nThe web-application was created as part of the subject \"Databases and Web\" at Telemark University College."
+          "description": "BlogApp is a website for blogging. It contains basic functionality for reading and writing blog posts, as well as functionality for commenting on these blog posts. My goal was to create a dynamic and user-friendly blog system.\n\nThe website was created as part of the subject \"Databases and Web\" at Telemark University College."
         },
         {
           "id": "friendlyloan",
@@ -425,7 +424,7 @@
             "c#"
           ],
           "sourceCodeLink": "http://github.com/chrrasmussen/SudokuApplication",
-          "description": "SodukoApp is a Windows application for playing the game Sudoku. It has functionality such as different board sizes, a Sudoku solver, importing and exporting games, error indication and notes.\n\nThe application was part of the  subject \"Object-oriented programming\" conducted at Telemark University College, Spring 2011. Students participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
+          "description": "SodukoApp is a Windows application for playing the game Sudoku. It has functionality such as generating different board sizes, solving the current puzzle, importing and exporting puzzles, error indication and notes.\n\nThe application was part of the subject \"Object-oriented programming\" at Telemark University College. Students participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
         },
         {
           "id": "tac-vista-for-iphone",
@@ -465,7 +464,7 @@
             "php"
           ],
           "previewLink": "http://christian.rasmussen.io/cv/f1-project/preview",
-          "description": "F1-project is a website that showcases a report named \"Analysis and modeling of meteorological data\".\n\nThis website was part of the subject \"F1-project\" conducted at Telemark University College in Fall 2008. Students participating in the project were Erik Barsøe, André Skare Berg, Christer Sørvik, Andreas Vaa, Matias Wilhelmsen and Christian Rasmussen."
+          "description": "F1-project is a website that showcases a report named \"Analysis and modeling of meteorological data\".\n\nThis website was part of the subject \"F1-project\" at Telemark University College. Students participating in the project were Erik Barsøe, André Skare Berg, Christer Sørvik, Andreas Vaa, Matias Wilhelmsen and Christian Rasmussen."
         },
         {
           "id": "ifknorge",
