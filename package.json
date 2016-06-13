@@ -16,7 +16,7 @@
     "url": "git+https://github.com/chrrasmussen/CV.git"
   },
   "author": "Christian Rasmussen <christian.rasmussen@me.com> (http://christian.rasmussen.io)",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/chrrasmussen/CV/issues"
   },
