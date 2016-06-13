@@ -445,7 +445,7 @@
             "com"
           ],
           "videoLink": "data/videos/tac-vista-for-iphone-demo.mp4",
-          "description": "TAC Vista for iPhone is a mobile application that integrates with Schneider-Electric's software named TAC Vista. TAC Vista is as platform that controls and monitors PLCs.\n\nThe mobile application has functionality for listing the object structure, as well as reading and writing values from/to TAC Vista. This was achieved by creating a proxy server (VB.net) that runs on the same machine that runs TAC Vista. The mobile application communicates with the proxy server (which is discovered via Bonjour)."
+          "description": "TAC Vista for iPhone is a mobile application that integrates with Schneider-Electric's software named TAC Vista. TAC Vista is a platform that controls and monitors PLCs.\n\nThe mobile application has functionality for listing the object structure, as well as reading and writing values from/to TAC Vista. This was achieved by creating a proxy server (VB.net) that runs on the same machine that runs TAC Vista. The mobile application communicates with the proxy server (which is discovered via Bonjour)."
         },
         {
           "id": "f1-project",
