@@ -5,7 +5,6 @@
     "Christian Rasmussen <christian.rasmussen@me.com>"
   ],
   "description": "Personal CV",
-  "main": "index.html",
   "keywords": [],
   "license": "MIT",
   "private": true,
