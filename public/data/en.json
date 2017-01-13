@@ -243,6 +243,7 @@
             "obj-c",
             "php"
           ],
+          "videoLink": "data/videos/etilbud.mp4",
           "description": "ETilbud is a mobile application that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in neither the App Store nor Google Play."
         },
         {
@@ -312,6 +313,7 @@
           "productPageLink": "http://www.mattilbud.com",
           "appStoreLink": "http://appstore.com/mattilbud",
           "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS, Android and Windows Phone. As of June 12th, 2016 the application has been downloaded more than 600 000 times and it has about 150 000 weekly users.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen."
+          "videoLink": "data/videos/mattilbud.mp4",
         },
         {
           "id": "barteguiden",
@@ -330,6 +332,7 @@
           ],
           "productPageLink": "http://www.dusken.no/barteguiden/",
           "appStoreLink": "http://appstore.com/barteguiden",
+          "videoLink": "data/videos/barteguiden.mp4",
           "sourceCodeLink": "http://github.com/dusken/Kulturkalender-iOS",
           "description": "Barteguiden is a mobile application that shows an overview of cultural events in Trondheim, such as concerts, presentations, exhibitions and the like.\n\nThe application includes functionality such as showing basic information about the event, e.g. description, price, location, link to website, etc. Additionally it supports filtering by featured events, paid/free events, categories, adding events to favorites and adding events to your own calendar.\n\nThe application was developed by the voluntary organization Studentmediene i Trondheim AS."
         },
@@ -389,6 +392,7 @@
             "obj-c"
           ],
           "productPageLink": "http://friendlyloan.rasmussen.io",
+          "videoLink": "data/videos/friendlyloan.mp4",
           "description": "FriendlyLoan is a mobile application that helps you remember when, where and why you borrowed or lent money. Easily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization.\n\nNote: The application is no longer available in the App Store."
         },
         {
@@ -423,6 +427,7 @@
             "windows",
             "c#"
           ],
+          "videoLink": "data/videos/sudoku-app.mp4",
           "sourceCodeLink": "http://github.com/chrrasmussen/SudokuApplication",
           "description": "SodukoApp is a Windows application for playing the game Sudoku. It has functionality such as generating different board sizes, solving the current puzzle, importing and exporting puzzles, error indication and notes.\n\nThe application was part of the subject \"Object-oriented programming\" at Telemark University College. Students participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
         },
