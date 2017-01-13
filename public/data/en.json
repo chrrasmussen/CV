@@ -2,8 +2,8 @@
   "basicInfo": {
     "name": "Christian Rasmussen",
     "dateOfBirth": "1987-05-30",
-    "address": "Draugveien 169\n4314 Sandnes",
-    "phoneNumber": "+47 90 88 51 17",
+    "address": "Draugveien 169\n4314 Sandnes\nNorway",
+    "phoneNumber": "+47 908 85 117",
     "email": "christian.rasmussen@me.com",
     "github": "chrrasmussen"
   },
@@ -304,7 +304,6 @@
             "ios",
             "swift",
             "obj-c",
-            "php",
             "elixir",
             "phoenix-framework",
             "nginx",
@@ -312,8 +311,8 @@
           ],
           "productPageLink": "http://www.mattilbud.com",
           "appStoreLink": "http://appstore.com/mattilbud",
-          "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS, Android and Windows Phone. As of June 12th, 2016 the application has been downloaded more than 600 000 times and it has about 150 000 weekly users.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen."
           "videoLink": "data/videos/mattilbud.mp4",
+          "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS and Android. As of January 13th, 2017 the application has been downloaded more than 775 000 times and it has about 200 000 weekly users.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen."
         },
         {
           "id": "barteguiden",
