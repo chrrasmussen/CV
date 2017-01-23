@@ -17,7 +17,7 @@ define([
             },
             replace: true,
             template: '<div style="position: relative">' +
-                '<div class="timeline-headers" style="position: absolute; top: 10px; left: 8px;">' +
+                '<div class="timeline-headers" style="position: absolute; top: 10px; left: 8px; z-index: 100;">' +
                     '<div ng-repeat="lane in data">' +
                         '<span>{{lane.title}}</span>' +
                     '</div>' +
