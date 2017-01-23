@@ -102,7 +102,7 @@
           "title": "System Developer",
           "subtitle": "Bouvet ASA",
           "textColor": "#FF5801",
-          "backgroundColor": "#fffbf9",
+          "backgroundColor": "#FFFBF9",
           "normalTextColor": "black",
           "logo": {
             "image": "data/logos/bouvet.png",
@@ -231,7 +231,7 @@
           "iconImage": "data/icons/api-viewer.png",
           "iconBackgroundColor": "white",
           "textColor": "#0059A0",
-          "backgroundColor": "#f8fcff",
+          "backgroundColor": "#F8FCFF",
           "normalTextColor": "black",
           "technologies": [
             "web",
