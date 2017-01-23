@@ -79,9 +79,26 @@
       "title": "Work",
       "content": [
         {
+          "id": "mattilbud-as",
+          "type": "period",
+          "startAt": "2016-09-01",
+          "title": "iOS and Backend Developer",
+          "subtitle": "Mattilbud AS",
+          "textColor": "#333",
+          "backgroundColor": "white",
+          "normalTextColor": "black",
+          "logo": {
+            "image": "data/logos/mattilbud.png",
+            "width": 70,
+            "height": 70,
+            "link": "http://www.mattilbud.com"
+          }
+        },
+        {
           "id": "bouvet",
           "type": "period",
           "startAt": "2014-09-01",
+          "endAt": "2016-08-31",
           "title": "System Developer",
           "subtitle": "Bouvet ASA",
           "textColor": "#FF5801",
