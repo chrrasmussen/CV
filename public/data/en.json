@@ -23,8 +23,8 @@
           "normalTextColor": "#333",
           "logo": {
             "image": "data/logos/ntnu.png",
-            "width": 60,
-            "height": 60,
+            "width": 70,
+            "height": 70,
             "link": "http://www.ntnu.no"
           }
         },
@@ -405,8 +405,8 @@
               "html",
               "css",
               "javascript",
-              "mysql",
-              "php"
+              "php",
+              "mysql"
             ],
           "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp",
           "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview",
