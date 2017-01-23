@@ -16,7 +16,13 @@ define([
                 click: '&'
             },
             replace: true,
-            template: '<div class="timeline"></div>',
+            template: '<div style="position: relative">' +
+                '<div class="timeline-headers" style="position: absolute; top: 10px; left: 8px;">' +
+                    '<div ng-repeat="lane in data">' +
+                        '<span>{{lane.title}}</span>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="timeline"></div>',
             compile: function (tElement, tAttrs) {
                 return function(scope, element, attrs) {
                     scope.$watch('data', function () {
@@ -55,9 +61,12 @@ define([
                         
                         timeline.data = scope.data;
                         timeline.update(false);
-                        
+
+                        var timelineTargetNode = tElement[0].querySelector('.timeline');
+
                         var timelineNode = paper.node;
-                        tElement.append(timelineNode);
+                        timelineTargetNode.append(timelineNode);
+
                         var compiled = $compile(timelineNode);
                         compiled(scope);
                     });

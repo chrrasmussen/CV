@@ -109,6 +109,29 @@ footer {
     margin: 10px;
 }
 
+.timeline-headers {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 200;
+
+    div {
+        line-height: 56px;
+
+        span {
+            padding: 5px 12px;
+            border-radius: 18px;
+        }
+
+        &:nth-child(even) span {
+            background-color: #F0F0F3;
+        }
+
+        &:nth-child(odd) span {
+            background-color: #E8E8EA;
+        }
+    }
+}
+
 div.timeline {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
