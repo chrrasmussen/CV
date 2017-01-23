@@ -207,6 +207,25 @@
       "title": "Projects",
       "content": [
         {
+          "id": "api-viewer",
+          "type": "milestone",
+          "date": "2017-01-18",
+          "title": "API Viewer",
+          "iconImage": "data/icons/api-viewer.png",
+          "iconBackgroundColor": "white",
+          "textColor": "#0059A0",
+          "backgroundColor": "#f8fcff",
+          "normalTextColor": "black",
+          "technologies": [
+            "web",
+            "html",
+            "css",
+            "elm"
+          ],
+          "videoLink": "data/videos/api-viewer.mp4",
+          "description": "The API Viewer makes it easy to view and navigate the Mattilbud API. It is implemented as an Elm app that is integrated into Mattilbud's admin website.\n\nThe API Viewer supports navigating the links available in the API. When navigating or changing the settings, the URL in the browser's address bar will update accordingly, which makes it easy to share the result with teammates.\n\nThe Mattilbud API supports different clients, requiring the clients to identify themselves with the API by sending a \"client token\" header. This makes it possible to target clients by platform, app version, OS version and so forth. To simulate a client, the API Viewer displays a dropdown list with the currently registered clients. The selected \"client token\" and \"client OS version\" are stored in local storage to avoid having to select the appropriate client again and again.\n\nTo make the API Viewer easily accessible, there are links from the various sections on the admin website to the corresponding location in the API."
+        },
+        {
           "id": "fix-my-city",
           "type": "milestone",
           "date": "2016-04-23",
