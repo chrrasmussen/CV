@@ -342,8 +342,10 @@
             "obj-c",
             "elixir",
             "phoenix-framework",
+            "postgresql",
             "nginx",
-            "docker"
+            "docker",
+            "ansible"
           ],
           "productPageLink": "http://www.mattilbud.com",
           "appStoreLink": "http://appstore.com/mattilbud",
