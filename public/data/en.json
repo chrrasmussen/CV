@@ -368,10 +368,9 @@
             "nodejs"
           ],
           "productPageLink": "http://www.dusken.no/barteguiden/",
-          "appStoreLink": "http://appstore.com/barteguiden",
           "videoLink": "data/videos/barteguiden.mp4",
-          "sourceCodeLink": "http://github.com/dusken/Kulturkalender-iOS",
-          "description": "Barteguiden is a mobile application that shows an overview of cultural events in Trondheim, such as concerts, presentations, exhibitions and the like.\n\nThe application includes functionality such as showing basic information about the event, e.g. description, price, location, link to website, etc. Additionally it supports filtering by featured events, paid/free events, categories, adding events to favorites and adding events to your own calendar.\n\nThe application was developed by the voluntary organization Studentmediene i Trondheim AS."
+          "sourceCodeLink": "https://github.com/Studentmediene/Barteguiden-iOS",
+          "description": "Barteguiden is a mobile application that shows an overview of cultural events in Trondheim, such as concerts, presentations, exhibitions and the like.\n\nThe application includes functionality such as showing basic information about the event, e.g. description, price, location, link to website, etc. Additionally it supports filtering by featured events, paid/free events, categories, adding events to favorites and adding events to your own calendar.\n\nThe application was developed by the voluntary organization Studentmediene i Trondheim AS.\n\nNote: The application is no longer available in the App Store."
         },
         {
           "id": "tineapp",
