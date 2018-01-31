@@ -4,10 +4,12 @@
   "description": "An interactive CV for Christian Rasmussen. It is built using Twitter Bootstrap, AngularJS, RequireJS, Snap.svg",
   "private": true,
   "dependencies": {
+    "bower": "^1.8.2",
     "harp": "~0.25.0"
   },
   "devDependencies": {},
   "scripts": {
+    "install": "./node_modules/.bin/bower install",
     "start": "./node_modules/.bin/harp server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
