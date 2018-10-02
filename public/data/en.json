@@ -82,6 +82,7 @@
           "id": "bouvet2",
           "type": "period",
           "startAt": "2017-09-01",
+          "endAt": "2018-09-30",
           "title": "System Developer",
           "subtitle": "Bouvet ASA",
           "textColor": "#FF5801",
@@ -297,7 +298,7 @@
             "php"
           ],
           "videoLink": "data/videos/etilbud.mp4",
-          "description": "ETilbud is a mobile application that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in the App Store."
+          "description": "ETilbud is a mobile application that displays weekly offers for all kind of stores, e.g. electronics, sports and food.\n\nThe team consisted of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: The application is no longer available in the App Store."
         },
         {
           "id": "assignment-system",
@@ -367,7 +368,7 @@
           "productPageLink": "http://www.mattilbud.com",
           "appStoreLink": "http://appstore.com/mattilbud",
           "videoLink": "data/videos/mattilbud.mp4",
-          "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS and Android. As of January 13, 2017 the application has been downloaded more than 775 000 times and it has about 200 000 weekly users.\n\nThe team consists of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen."
+          "description": "Mattilbud is a mobile application that shows an overview of weekly offers from most of the grocery stores in Norway.\n\nThe application is available for iOS and Android. As of March 21, 2018 the application has been downloaded more than 1 000 000 times and it has about 200 000 weekly users.\n\nThe team consisted of Stian Bøe, Njaal Gjerde, Andreas Jørgensen and Christian Rasmussen.\n\nNote: In the summer of 2018, Mattilbud AS was sold to ShopGun."
         },
         {
           "id": "barteguiden",
