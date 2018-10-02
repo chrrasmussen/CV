@@ -2,12 +2,12 @@ define([
     './module'
 ], function (module) {
     'use strict';
-    
+
     module.controller('MainCtrl', function ($scope, $location, $q, api) {
         $q.all([api.getBasicInfo(), api.getTimelineData()]).then(function (responses) {
             var basicInfo = responses[0];
-            var timelineData = responses[1];
-            
+            var timelineData = responses[1].timeline;
+
             // Set initial state
             $scope.backgroundColor = 'white';
             $scope.textColor = '#333';
@@ -27,11 +27,11 @@ define([
                 $scope.backgroundColor = backgroundColor;
                 $scope.textColor = textColor;
             });
-            
+
             console.log('MainCtrl loaded');
         });
     });
-    
+
     function calculateTimelineEndDate(date) {
         var numberOfMonthsInTheFuture;
         if (date.getMonth() <= 1) {

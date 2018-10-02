@@ -1,27 +1,29 @@
 define([
-    '../app',
-    '../utils'
-], function (app, utils) {
+    '../app'
+], function (app) {
     'use strict';
-    
+
     app.config(function($routeProvider) {
         $routeProvider.when('/', {
             resolve: {
                 _: function ($location, api) {
                     api.getTimelineData().then(function (timelineData) {
-                        var firstEvent = utils.findFirstEvent(timelineData);
-                        $location.path('/' + firstEvent.id);
+                        if (timelineData.initialEventId) {
+                            $location.path('/' + timelineData.initialEventId);
+                        }
                     });
                 }
             }
         });
-        
+
         $routeProvider.when('/:id', {
             templateUrl: 'partials/event.html',
             controller: 'EventCtrl',
             resolve: {
                 timelineData: function (api) {
-                    return api.getTimelineData();
+                    return api.getTimelineData().then(function (timelineData) {
+                        return timelineData.timeline;
+                    });
                 }
             }
         });
