@@ -420,12 +420,12 @@
           "backgroundColor": "#F6F6F6",
           "normalTextColor": "#333",
           "technologies": [
-              "html",
-              "css",
-              "javascript",
-              "php",
-              "mysql"
-            ],
+            "html",
+            "css",
+            "javascript",
+            "php",
+            "mysql"
+          ],
           "sourceCodeLink": "http://github.com/chrrasmussen/BlogApp",
           "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview",
           "description": "BlogApp is a website for blogging. It contains basic functionality for reading and writing blog posts, as well as functionality for commenting on these blog posts. My goal was to create a dynamic and user-friendly blog system.\n\nThe website was created as part of the subject \"Databases and Web\" at Telemark University College."
