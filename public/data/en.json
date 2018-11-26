@@ -7,7 +7,7 @@
     "email": "christian.rasmussen@me.com",
     "github": "chrrasmussen"
   },
-  "initialEventId": "",
+  "initialEventId": "open-source",
   "timeline": [
     {
       "title": "Education",
@@ -220,6 +220,16 @@
     {
       "title": "Voluntary Work",
       "content": [
+        {
+          "id": "open-source",
+          "type": "period",
+          "startAt": "2018-10-01",
+          "title": "λ",
+          "subtitle": "Open Source",
+          "textColor": "#333",
+          "backgroundColor": "white",
+          "normalTextColor": "#333"
+        },
         {
           "id": "studentmediene-i-trondheim-as",
           "type": "period",
