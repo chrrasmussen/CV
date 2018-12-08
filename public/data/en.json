@@ -458,6 +458,7 @@
           ],
           "productPageLink": "http://friendlyloan.rasmussen.io",
           "videoLink": "data/videos/friendlyloan.mp4",
+          "sourceCodeLink": "https://github.com/chrrasmussen/FriendlyLoan",
           "description": "FriendlyLoan is a mobile application that helps you remember when, where and why you borrowed or lent money. Easily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization.\n\nNote: The application is no longer available in the App Store."
         },
         {
