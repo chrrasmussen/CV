@@ -80,6 +80,22 @@
       "title": "Work",
       "content": [
         {
+          "id": "systor-vest",
+          "type": "period",
+          "startAt": "2018-12-01",
+          "title": "System Developer",
+          "subtitle": "Systor Vest AS",
+          "textColor": "#F29223",
+          "backgroundColor": "#252525",
+          "normalTextColor": "#EFEFEF",
+          "logo": {
+            "image": "data/logos/systor-vest.png",
+            "width": 150,
+            "height": 30,
+            "link": "https://www.systorvest.no"
+          }
+        },
+        {
           "id": "bouvet2",
           "type": "period",
           "startAt": "2017-09-01",
