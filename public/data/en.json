@@ -280,6 +280,23 @@
       "title": "Projects",
       "content": [
         {
+          "id": "idris2-erlang",
+          "type": "milestone",
+          "date": "2020-09-28",
+          "title": "Idris2-Erlang",
+          "iconImage": "data/icons/idris.png",
+          "iconBackgroundColor": "white",
+          "textColor": "#AA0000",
+          "backgroundColor": "white",
+          "normalTextColor": "black",
+          "technologies": [
+            "idris",
+            "erlang"
+          ],
+          "sourceCodeLink": "https://github.com/chrrasmussen/Idris2-Erlang",
+          "description": "Erlang code generator for Idris 2.\n\nStarted working on it in January 2019. Still work in progress (as of December 2021)."
+        },
+        {
           "id": "api-viewer",
           "type": "milestone",
           "date": "2017-01-18",
