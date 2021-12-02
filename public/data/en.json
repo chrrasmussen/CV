@@ -23,9 +23,9 @@
           "logo": {
             "image": "data/logos/ntnu.png",
             "width": 70,
-            "height": 70,
-            "link": "https://www.ntnu.no"
-          }
+            "height": 70
+          },
+          "websiteLink": "https://www.ntnu.no"
         },
         {
           "id": "hit2",
@@ -40,9 +40,9 @@
           "logo": {
             "image": "data/logos/hit.png",
             "width": 150,
-            "height": 50,
-            "link": "https://www.hit.no"
-          }
+            "height": 50
+          },
+          "websiteLink": "https://www.hit.no"
         },
         {
           "id": "hit",
@@ -57,9 +57,9 @@
           "logo": {
             "image": "data/logos/hit.png",
             "width": 150,
-            "height": 50,
-            "link": "https://www.hit.no"
-          }
+            "height": 50
+          },
+          "websiteLink": "https://www.hit.no"
         },
         {
           "id": "gand-vgs",
@@ -70,7 +70,8 @@
           "subtitle": "Gand VGS",
           "textColor": "black",
           "backgroundColor": "white",
-          "normalTextColor": "black"
+          "normalTextColor": "black",
+          "websiteLink": "https://www.gand.vgs.no"
         }
       ]
     },
@@ -85,7 +86,8 @@
           "subtitle": "Christian Rasmussen I/O",
           "textColor": "#333",
           "backgroundColor": "white",
-          "normalTextColor": "black"
+          "normalTextColor": "black",
+          "websiteLink": "http://christian.rasmussen.io"
         },
         {
           "id": "systor-vest",
@@ -100,9 +102,9 @@
           "logo": {
             "image": "data/logos/systor-vest.png",
             "width": 150,
-            "height": 30,
-            "link": "https://www.systorvest.no"
-          }
+            "height": 30
+          },
+          "websiteLink": "https://www.systorvest.no"
         },
         {
           "id": "bouvet2",
@@ -117,9 +119,9 @@
           "logo": {
             "image": "data/logos/bouvet.png",
             "width": 150,
-            "height": 39,
-            "link": "https://www.bouvet.no"
-          }
+            "height": 39
+          },
+          "websiteLink": "https://www.bouvet.no"
         },
         {
           "id": "mattilbud-as",
@@ -134,9 +136,9 @@
           "logo": {
             "image": "data/logos/mattilbud.png",
             "width": 70,
-            "height": 70,
-            "link": "http://www.mattilbud.com"
-          }
+            "height": 70
+          },
+          "websiteLink": "http://www.mattilbud.com"
         },
         {
           "id": "bouvet",
@@ -151,9 +153,9 @@
           "logo": {
             "image": "data/logos/bouvet.png",
             "width": 150,
-            "height": 39,
-            "link": "https://www.bouvet.no"
-          }
+            "height": 39
+          },
+          "websiteLink": "https://www.bouvet.no"
         },
         {
           "id": "bekk",
@@ -168,9 +170,9 @@
           "logo": {
             "image": "data/logos/bekk.png",
             "width": 140,
-            "height": 50,
-            "link": "https://www.bekk.no"
-          }
+            "height": 50
+          },
+          "websiteLink": "https://www.bekk.no"
         },
         {
           "id": "schneider-electric4",
@@ -185,9 +187,9 @@
           "logo": {
             "image": "data/logos/schneider-electric.png",
             "width": 130,
-            "height": 40,
-            "link": "https://www.schneider-electric.no"
-          }
+            "height": 40
+          },
+          "websiteLink": "https://www.schneider-electric.no"
         },
         {
           "id": "schneider-electric3",
@@ -202,9 +204,9 @@
           "logo": {
             "image": "data/logos/schneider-electric.png",
             "width": 130,
-            "height": 40,
-            "link": "https://www.schneider-electric.no"
-          }
+            "height": 40
+          },
+          "websiteLink": "https://www.schneider-electric.no"
         },
         {
           "id": "schneider-electric2",
@@ -219,9 +221,9 @@
           "logo": {
             "image": "data/logos/schneider-electric.png",
             "width": 130,
-            "height": 40,
-            "link": "https://www.schneider-electric.no"
-          }
+            "height": 40
+          },
+          "websiteLink": "https://www.schneider-electric.no"
         },
         {
           "id": "schneider-electric",
@@ -236,9 +238,9 @@
           "logo": {
             "image": "data/logos/schneider-electric.png",
             "width": 130,
-            "height": 40,
-            "link": "https://www.schneider-electric.no"
-          }
+            "height": 40
+          },
+          "websiteLink": "https://www.schneider-electric.no"
         }
       ]
     },
