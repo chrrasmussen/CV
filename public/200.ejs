@@ -27,11 +27,11 @@
                     <th>Date of Birth</th>
                     <td>{{about.dateOfBirth | date:'MMM d, yyyy'}} <span>— {{about.dateOfBirth | age}} years old</span></td>
                 </tr>
-                <tr>
+                <tr ng-if="about.address">
                     <th>Address</th>
                     <td ng-bind-html="about.address | nl2br"></td>
                 </tr>
-                <tr>
+                <tr ng-if="about.phoneNumber">
                     <th>Phone Number</th>
                     <td>{{about.phoneNumber}}</td>
                 </tr>

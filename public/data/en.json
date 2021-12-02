@@ -2,8 +2,6 @@
   "basicInfo": {
     "name": "Christian Rasmussen",
     "dateOfBirth": "1987-05-30",
-    "address": "Draugveien 169\n4314 Sandnes\nNorway",
-    "phoneNumber": "+47 908 85 117",
     "email": "christian.rasmussen@me.com",
     "github": "chrrasmussen"
   },
