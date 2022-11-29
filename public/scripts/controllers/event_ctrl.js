@@ -16,7 +16,7 @@ define([
         $scope.isPeriod = (event.type === 'period');
         $scope.isMilestone = (event.type === 'milestone');
 
-        $scope.$emit('setBackgroundColor', event.backgroundColor, event.normalTextColor);
+        $scope.$emit('setBackgroundColor', event.backgroundColor, event.bodyTextColor);
 
         console.log('EventCtrl loaded');
     });

@@ -51,7 +51,7 @@ define([
                     event.height = this.heightPerEvent;
                     event.title = eventData.title;
                     event.subtitle = eventData.subtitle;
-                    event.textColor = eventData.textColor;
+                    event.textColor = eventData.titleTextColor;
                     event.backgroundColor = eventData.backgroundColor;
                 }
                 else if (event instanceof Milestone) {
