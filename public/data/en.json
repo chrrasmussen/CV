@@ -297,6 +297,24 @@
           "description": "Erlang code generator for Idris 2.\n\nStarted working on it in January 2019. Still work in progress (as of December 2021)."
         },
         {
+          "id": "statum",
+          "type": "milestone",
+          "date": "2020-02-01",
+          "title": "Statum",
+          "iconImage": "data/icons/statum.png",
+          "iconBackgroundColor": "#333",
+          "backgroundColor": "#E1E3E6",
+          "titleTextColor": "#333",
+          "bodyTextColor": "black",
+          "technologies": [
+            "web",
+            "elm",
+            "haskell",
+            "postgresql"
+          ],
+          "description": "Statum is a hosted dashboard service. The design of Statum is heavily inspired by the (abandoned) open source project named Dashing. The implementation is written from scratch using Elm on the frontend and Haskell on the backend.\n\nDashboards are updated live, which means that any devices that are currently showing the dashboard will update automatically. This can happen when the configuration of the dashboard changes or when new data is pushed to the API of Statum. Statum allows users to configure the widgets directly from the browser. This include moving widgets in a grid using drag-and-drop, adding or removing widgets, and configuring the mode of operation. Most widgets have two modes of operation:\n1. Present dynamic data from the API\n2. Present static data (Configured on the admin page)\n\nWhen adding a new widget to a dashboard, the widget will automatically get assigned an ID. This ID can be used by HTTP clients to push values to the Statum API. Each widget has a unique URL and JSON payload.\n\nA dashboard can be public, protected by user credentials or require a shared password.\n\nThe team consisted of Petter Rasmussen and Christian Rasmussen."
+        },
+        {
           "id": "api-viewer",
           "type": "milestone",
           "date": "2017-01-18",
