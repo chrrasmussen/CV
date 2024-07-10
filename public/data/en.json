@@ -280,6 +280,27 @@
       "title": "Projects",
       "content": [
         {
+          "id": "typedtext",
+          "type": "milestone",
+          "date": "2020-11-28",
+          "title": "Typedtext.io",
+          "iconImage": "data/icons/typedtext.png",
+          "iconBackgroundColor": "#4A4A4A",
+          "backgroundColor": "#F2F2F2",
+          "titleTextColor": "#4A4A4A",
+          "bodyTextColor": "black",
+          "technologies": [
+            "idris",
+            "erlang",
+            "html",
+            "css",
+            "phoenix-framework"
+          ],
+          "previewLink": "https://wwww.typedtext.io",
+          "sourceCodeLink": "https://github.com/chrrasmussen/typedtext.io",
+          "description": "A blog for writing about technical stuff.\n\nThe website is written in Idris 2. The Idris 2 code is generated to Erlang using my Idris2-Erlang project. The Erlang code then runs on top of Phoenix Framework."
+        },
+        {
           "id": "idris2-erlang",
           "type": "milestone",
           "date": "2020-09-28",
