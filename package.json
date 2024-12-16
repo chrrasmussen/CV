@@ -5,9 +5,9 @@
   "private": true,
   "dependencies": {
     "bower": "^1.8.2",
-    "harp": "~0.46.1"
+    "harp": "~0.46.1",
+    "less": "^4.2.1"
   },
-  "devDependencies": {},
   "scripts": {
     "install": "./node_modules/.bin/bower install",
     "start": "./node_modules/.bin/harp public",
