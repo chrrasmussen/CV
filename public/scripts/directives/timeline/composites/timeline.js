@@ -1,12 +1,13 @@
 define([
     '../utils',
+    '../../../utils',
     './group',
     './lanes',
     './separators',
     './edges',
     './events',
     './marker',
-], function (utils, Group, Lanes, Separators, Edges, Events, Marker) {
+], function (utils, rootUtils, Group, Lanes, Separators, Edges, Events, Marker) {
     'use strict';
     
     function Timeline(paper, animationDuration) {
@@ -97,7 +98,7 @@ define([
         this.events.update(animate);
         
         // Marker
-        var today = new Date().toISOString();
+        var today = rootUtils.getCurrentDate().toISOString();
         var dateMarkerX = utils.lengthBetweenDates(today, this.endAt, this.lengthPerMonth);
         var dateMarkerY = this.verticalMargin - this.markerHeight;
         var dateMarkerHeight = this.monthSeparatorHeight + this.heightPerLane * this.data.length + this.markerHeight;

@@ -1,6 +1,7 @@
 define([
-    './module'
-], function (module) {
+    './module',
+    '../utils'
+], function (module, utils) {
     'use strict';
 
     module.controller('MainCtrl', function ($scope, $location, $q, api) {
@@ -12,7 +13,7 @@ define([
             $scope.backgroundColor = 'white';
             $scope.textColor = '#333';
             $scope.about = basicInfo;
-            $scope.timelineEndDate = calculateTimelineEndDate(new Date());
+            $scope.timelineEndDate = calculateTimelineEndDate(utils.getCurrentDate());
             $scope.timelineData = timelineData;
 
             $scope.log = function (message) {

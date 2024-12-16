@@ -3,7 +3,8 @@ define([
     'use strict';
 
     return {
-        findEventById: findEventById
+        findEventById: findEventById,
+        getCurrentDate: getCurrentDate
     };
 
     function findEventById(data, eventID) {
@@ -25,5 +26,9 @@ define([
                 }
             }
         }
+    }
+
+    function getCurrentDate() {
+        return new Date();
     }
 });

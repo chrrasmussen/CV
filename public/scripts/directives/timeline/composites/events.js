@@ -1,9 +1,10 @@
 define([
     '../utils',
+    '../../../utils',
     './group',
     './period',
     './milestone'
-], function (utils, Group, Period, Milestone) {
+], function (utils, rootUtils, Group, Period, Milestone) {
     'use strict';
     
     function Events(paper, animationDuration) {
@@ -35,7 +36,7 @@ define([
                 var event = this.lanes[laneIndex][eventIndex];
                 
                 if (event instanceof Period) {
-                    var endAt = eventData.endAt || new Date().toISOString();
+                    var endAt = eventData.endAt || rootUtils.getCurrentDate().toISOString();
                     
                     var endAtLength = utils.lengthBetweenDates(endAt, this.endAt, this.lengthPerMonth);
                     var startAtLength = utils.lengthBetweenDates(eventData.startAt, this.endAt, this.lengthPerMonth);
