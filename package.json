@@ -5,12 +5,12 @@
   "private": true,
   "dependencies": {
     "bower": "^1.8.2",
-    "harp": "~0.25.0"
+    "harp": "~0.46.1"
   },
   "devDependencies": {},
   "scripts": {
     "install": "./node_modules/.bin/bower install",
-    "start": "./node_modules/.bin/harp server",
+    "start": "./node_modules/.bin/harp public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

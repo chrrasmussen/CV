@@ -21,4 +21,4 @@ npm-debug.log
 
 # Custom rules
 /public/bower_components/
-harp.json
+/public/_harp.json
