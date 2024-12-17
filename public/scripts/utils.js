@@ -29,6 +29,6 @@ define([
     }
 
     function getCurrentDate() {
-        return new Date();
+        return new Date('2023-12-15'); // CV is not getting any more updates, so freeze the timeline to this date.
     }
 });
