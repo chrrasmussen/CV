@@ -18,10 +18,9 @@ The live version is available at http://christian.rasmussen.io/cv/
 
 1. `git clone https://github.com/chrrasmussen/CV`
 2. `cd CV`
-3. `mv harp.json.example harp.json`
-4. `bower install`
-5. `npm install`
-5. `npm start`
+3. `cp public/_harp.json.example public/_harp.json`
+3. `npm install`
+4. `npm start`
 
 
 ## Planned Features
