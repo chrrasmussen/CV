@@ -296,7 +296,7 @@
             "css",
             "phoenix-framework"
           ],
-          "previewLink": "https://wwww.typedtext.io",
+          "previewLink": "https://www.typedtext.io",
           "sourceCodeLink": "https://github.com/chrrasmussen/typedtext.io",
           "description": "A blog for writing about technical stuff.\n\nThe website is written in Idris 2. The Idris 2 code is generated to Erlang using my Idris2-Erlang project. The Erlang code then runs on top of Phoenix Framework."
         },
