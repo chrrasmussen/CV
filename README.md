@@ -3,11 +3,6 @@
 An interactive CV for Christian Rasmussen. It is built using [Twitter Bootstrap](http://getbootstrap.com/), [AngularJS](http://angularjs.org/), [RequireJS](http://requirejs.org/), [Snap.svg](http://snapsvg.io/).
 
 
-## Demo
-
-The live version is available at http://christian.rasmussen.io/cv/
-
-
 ## Prerequisites
 
 - [Bower](http://bower.io)

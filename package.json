@@ -17,10 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/christian-public/CV.git"
   },
-  "author": "Christian Rasmussen <christian.rasmussen@me.com> (http://christian.rasmussen.io)",
+  "author": "Christian Rasmussen <christian.rasmussen@me.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/christian-public/CV/issues"
-  },
-  "homepage": "http://christian.rasmussen.io/cv"
+  }
 }

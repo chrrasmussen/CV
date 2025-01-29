@@ -87,7 +87,7 @@
           "backgroundColor": "white",
           "titleTextColor": "#333",
           "bodyTextColor": "black",
-          "websiteLink": "http://christian.rasmussen.io"
+          "websiteLink": "https://christian.rasmussen.io"
         },
         {
           "id": "systor-vest",
@@ -523,7 +523,7 @@
             "mysql"
           ],
           "sourceCodeLink": "https://github.com/christian-public/BlogApp",
-          "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview",
+          "previewLink": "https://christian.rasmussen.io/cv/blogapp/preview",
           "description": "BlogApp is a website for blogging. It contains basic functionality for reading and writing blog posts, as well as functionality for commenting on these blog posts. My goal was to create a dynamic and user-friendly blog system.\n\nThe website was created as part of the subject \"Databases and Web\" at Telemark University College."
         },
         {
@@ -618,7 +618,7 @@
             "javascript",
             "php"
           ],
-          "previewLink": "http://christian.rasmussen.io/cv/f1-project/preview",
+          "previewLink": "https://christian.rasmussen.io/cv/f1-project/preview",
           "description": "F1-project is a website that showcases a report named \"Analysis and modeling of meteorological data\".\n\nThis website was part of the subject \"F1-project\" at Telemark University College. Students participating in the project were Erik Barsøe, André Skare Berg, Christer Sørvik, Andreas Vaa, Matias Wilhelmsen and Christian Rasmussen."
         },
         {
@@ -638,7 +638,7 @@
             "php",
             "mysql"
           ],
-          "previewLink": "http://christian.rasmussen.io/cv/ifknorge/preview",
+          "previewLink": "https://christian.rasmussen.io/cv/ifknorge/preview",
           "description": "A website that formerly represented the karate organization named IFK Norway. It remained IFK Norway's website until the end of 2011."
         }
       ]
