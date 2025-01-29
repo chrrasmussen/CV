@@ -3,7 +3,7 @@
     "name": "Christian Rasmussen",
     "dateOfBirth": "1987-05-30",
     "email": "christian.rasmussen@me.com",
-    "github": "chrrasmussen"
+    "github": "christian-public"
   },
   "initialEventId": "cr-io",
   "timeline": [
@@ -297,7 +297,7 @@
             "phoenix-framework"
           ],
           "previewLink": "https://www.typedtext.io",
-          "sourceCodeLink": "https://github.com/chrrasmussen/typedtext.io",
+          "sourceCodeLink": "https://github.com/christian-public/typedtext.io",
           "description": "A blog for writing about technical stuff.\n\nThe website is written in Idris 2. The Idris 2 code is generated to Erlang using my Idris2-Erlang project. The Erlang code then runs on top of Phoenix Framework."
         },
         {
@@ -314,7 +314,7 @@
             "idris",
             "erlang"
           ],
-          "sourceCodeLink": "https://github.com/chrrasmussen/Idris2-Erlang",
+          "sourceCodeLink": "https://github.com/christian-public/Idris2-Erlang",
           "description": "Erlang code generator for Idris 2.\n\nStarted working on it in January 2019. Still work in progress (as of December 2021)."
         },
         {
@@ -415,7 +415,7 @@
             "eclipse"
           ],
           "videoLink": "data/videos/assignment-system-demo.mp4",
-          "sourceCodeLink": "https://github.com/chrrasmussen/NTNU-Master-Project",
+          "sourceCodeLink": "https://github.com/christian-public/NTNU-Master-Project",
           "description": "Assignment System is a website where students can submit their programming assignments. The focus for the website was to improve the development experience for the students. The students should be able to solve and deliver programming assignments without even needing to set up the development environment on their own computers.\n\nTo achieve this goal the website includes functionality for running code and tests, and it has an editor that supports syntax highlighting, error checking and code completion.\n\nThis website was created as a part of the Master thesis by David Åse and Christian Rasmussen, conducted at NTNU in the Spring 2014. The Master thesis was based on a pre-project by David Åse, conducted at NTNU in the Fall 2013."
         },
         {
@@ -436,7 +436,7 @@
             "angular",
             "snap-svg"
           ],
-          "sourceCodeLink": "https://github.com/chrrasmussen/CV",
+          "sourceCodeLink": "https://github.com/christian-public/CV",
           "description": "You are looking at it!"
         },
         {
@@ -482,7 +482,7 @@
           ],
           "productPageLink": "https://www.dusken.no/barteguiden/",
           "videoLink": "data/videos/barteguiden.mp4",
-          "sourceCodeLink": "https://github.com/chrrasmussen/Barteguiden-iOS",
+          "sourceCodeLink": "https://github.com/christian-public/Barteguiden-iOS",
           "description": "Barteguiden is a mobile application that shows an overview of cultural events in Trondheim, such as concerts, presentations, exhibitions and the like.\n\nThe application includes functionality such as showing basic information about the event, e.g. description, price, location, link to website, etc. Additionally it supports filtering by featured events, paid/free events, categories, adding events to favorites and adding events to your own calendar.\n\nThe application was developed by the voluntary organization Studentmediene i Trondheim AS.\n\nNote: The application is no longer available in the App Store."
         },
         {
@@ -522,7 +522,7 @@
             "php",
             "mysql"
           ],
-          "sourceCodeLink": "https://github.com/chrrasmussen/BlogApp",
+          "sourceCodeLink": "https://github.com/christian-public/BlogApp",
           "previewLink": "http://christian.rasmussen.io/cv/blogapp/preview",
           "description": "BlogApp is a website for blogging. It contains basic functionality for reading and writing blog posts, as well as functionality for commenting on these blog posts. My goal was to create a dynamic and user-friendly blog system.\n\nThe website was created as part of the subject \"Databases and Web\" at Telemark University College."
         },
@@ -542,7 +542,7 @@
           ],
           "productPageLink": "http://friendlyloan.rasmussen.io",
           "videoLink": "data/videos/friendlyloan.mp4",
-          "sourceCodeLink": "https://github.com/chrrasmussen/FriendlyLoan",
+          "sourceCodeLink": "https://github.com/christian-public/FriendlyLoan",
           "description": "FriendlyLoan is a mobile application that helps you remember when, where and why you borrowed or lent money. Easily add new loans, settle debt with any friends and view the full history of loans.\n\nSupports English and Norwegian localization.\n\nNote: The application is no longer available in the App Store."
         },
         {
@@ -578,7 +578,7 @@
             "c#"
           ],
           "videoLink": "data/videos/sudoku-app.mp4",
-          "sourceCodeLink": "https://github.com/chrrasmussen/SudokuApplication",
+          "sourceCodeLink": "https://github.com/christian-public/SudokuApplication",
           "description": "SodukoApp is a Windows application for playing the game Sudoku. It has functionality such as generating different board sizes, solving the current puzzle, importing and exporting puzzles, error indication and notes.\n\nThe application was part of the subject \"Object-oriented programming\" at Telemark University College. Students participating in this project were Erik Barsøe, Henrik Hopen and Christian Rasmussen."
         },
         {
